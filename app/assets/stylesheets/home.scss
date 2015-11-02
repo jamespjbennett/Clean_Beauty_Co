@@ -5,23 +5,18 @@
 
 .navbar{
   width:100%;
+  margin-bottom: 0!important;
 }
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+.main-header-image{
+  height: 300px;
+  background: url("http://www.mindfulbeautyadvisor.com/wp-content/uploads/2015/06/cropped-mba-header-2.jpg");
+  opacity: 0.5;
 }
 
-/* Set the fixed height of the footer here */
-#footer {
-  height: 60px;
-  width: 100%;
-  background-color: grey;
-  position: fixed;
-  bottom: 0;
+.header-logo-container img{
+  position: absolute;
+  width: 21%;
+  left: 4%;
+  top: 10%;
 }
