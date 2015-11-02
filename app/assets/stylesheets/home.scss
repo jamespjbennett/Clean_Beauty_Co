@@ -9,8 +9,10 @@
 }
 
 .main-header-image{
-  height: 300px;
+  height: 500px;
   background: url("http://www.mindfulbeautyadvisor.com/wp-content/uploads/2015/06/cropped-mba-header-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   opacity: 0.5;
 }
 
