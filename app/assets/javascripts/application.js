@@ -17,3 +17,23 @@
 //= require turbolinks
 //= require_tree .
 
+
+  // HOMEPAGE FUNCTIONS ***************
+function toggleAboutUsContent(){
+  if($('.read-more').text() == "Read more"){
+    $('.homepage-about-us span').slideDown();
+    $('.read-more').text('Read less')
+  } else{
+    $('.homepage-about-us span').slideUp();
+    $('.read-more').text('Read more')
+  }
+}
+
+
+$(document).ready(function(){
+
+  // HOMEPAGE FUNCTIONS ***************
+  console.log('hello')
+  $('.homepage-about-us span').hide();
+  $('.read-more').on('click', toggleAboutUsContent);
+});

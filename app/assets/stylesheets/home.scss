@@ -9,10 +9,7 @@
 }
 
 .main-header-image{
-  height: 860px;
-  // background: url("background-placeholder-1.jpg");
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
+  height: 800px;
   opacity: 0.5;
 }
 
@@ -34,4 +31,21 @@
 .opening-line-test{
   font-size: 30px;
   line-height: 100%;
+}
+
+.homepage-about-us{
+  margin:0 auto;
+}
+.homepage-about-us h1{
+  text-align: center;
+}
+
+.homepage-about-us h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+.homepage-about-us p{
+  font-size: 20px;
+  text-align: left;
+  line-height: 150%;
 }
