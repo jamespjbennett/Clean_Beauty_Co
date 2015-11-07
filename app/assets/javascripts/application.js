@@ -36,4 +36,16 @@ $(document).ready(function(){
   console.log('hello')
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
+  $(window).scroll(function () {
+        //if you hard code, then use console
+        //.log to determine when you want the 
+        //nav bar to stick.  
+        console.log($(window).scrollTop())
+      if ($(window).scrollTop() > 801) {
+        $('.navbar').addClass('navbar-fixed-top');
+      }
+      if ($(window).scrollTop() < 800) {
+        $('.navbar').removeClass('navbar-fixed-top');
+      }
+    });
 });
