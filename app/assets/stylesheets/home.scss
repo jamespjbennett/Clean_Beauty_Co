@@ -10,10 +10,18 @@
 
 .main-header-image{
   height: 860px;
-  background: url("background-placeholder-1.jpg");
-  background-repeat: no-repeat;
+  // background: url("background-placeholder-1.jpg");
+  // background-repeat: no-repeat;
   // background-size: 100% 100%;
   opacity: 0.5;
+}
+
+.main-header-image img{
+  opacity: 0.5!important;
+}
+
+.parallax-mirror img{
+  opacity: 0.5!important;
 }
 
 .header-logo-container img {
@@ -21,4 +29,9 @@
     width: 21%;
     left: 40%;
     top: 4%;
+}
+
+.opening-line-test{
+  font-size: 30px;
+  line-height: 100%;
 }

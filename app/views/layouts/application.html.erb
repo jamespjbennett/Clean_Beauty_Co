@@ -4,17 +4,16 @@
   <title>CleanBeautyCoApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="main-header-image">
-  
-</div>
+<!-- <div class="main-header-image" data-scroll-speed="7">
+</div> -->
+<div class="main-header-image" data-parallax="scroll" data-image-src="<%= image_url 'background-placeholder-1.jpg' %>" data-speed="0.2"></div>
 <div class="header-logo-container">
   <%= image_tag("logo.png") %>
 </div>
-
-<%= yield %>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,5 +39,8 @@
     </div>
   </div>
 </nav>
+
+<%= yield %>
+
 </body>
 </html>
