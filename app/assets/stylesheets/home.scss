@@ -41,11 +41,11 @@
 }
 
 .homepage-about-us h1{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 .homepage-about-us p{
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
   line-height: 150%;
 }
@@ -77,4 +77,7 @@
 }
 .black{
   background: black;
+}
+.navbar{
+  height: 80px!important;
 }
