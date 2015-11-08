@@ -21,6 +21,10 @@
   opacity: 0.5!important;
 }
 
+.blog-image-container.parallax-mirror img{
+  opacity: 1!important;
+}
+
 .header-logo-container img {
     position: absolute;
     width: 21%;
@@ -83,8 +87,14 @@
   margin-top: 2%;
 }
 
-.nav li a{
-  margin-top: 12%;
+.blog-image-container{
+  height: 447px;
 }
+
+.blog-image-container img{
+  height: 100%;
+  margin-top: 4%;
+}
+
 
 
