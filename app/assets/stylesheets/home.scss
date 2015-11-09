@@ -50,9 +50,11 @@
   word-spacing: 6px;
 }
 .homepage-about-us p{
-  font-size: 15px;
+  font-size: 27px;
   text-align: left;
   line-height: 150%;
+  font-family: DIN Condensed;
+  margin-top: 5%;
 }
 
 .header-taglines {
@@ -99,7 +101,7 @@
 }
 
 .placeholder-scroll{
-  height: 810px;
+  height: 910px;
 }
 
 .blog-header h3{
@@ -123,6 +125,23 @@
 
 .nav li{
   font-family: Bebas;
+}
+
+.navbar{
+  background:white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(191,189,191,0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(191,189,191,0.5);
+  box-shadow: 0px 1px 5px 0px rgba(191,189,191,0.5);
+}
+
+.blog-header h3 a{
+  color:white;
+  text-decoration: none;
+}
+
+.blog-header h3 a:hover{
+  color:#ABAAAA;
+  background:transparent;
 }
 
 
