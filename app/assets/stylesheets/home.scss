@@ -53,20 +53,21 @@
   font-size: 27px;
   text-align: left;
   line-height: 150%;
-  font-family: DIN Condensed;
+  font-family: 'Alternate Gothic No1 D';
   margin-top: 5%;
 }
 
 .header-taglines {
   position: absolute;
-  left: 15%;
+  left: 13%;
   top: 400px;
 }
 .header-taglines h1{
-  font-size: 43px;
+  font-size: 73px;
   font-weight: bold;
   text-align: center;
-  word-spacing: 6px;
+  /* word-spacing: 6px; */
+  letter-spacing: 2px;
 }
 
 .content-test{
@@ -78,6 +79,10 @@
 }
 .products-feature{
   margin-left: 13%;
+}
+
+.feature-images-links div h2{
+  font-weight: bold;
 }
 .recipes-feature, .products-feature, .ingredients-feature{
   margin-top:5%;
@@ -91,6 +96,11 @@
   margin-top: 2%;
 }
 
+.navbar-default .navbar-nav > li > a{
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
 .blog-image-container{
   height: 447px;
 }
@@ -101,18 +111,18 @@
 }
 
 .placeholder-scroll{
-  height: 910px;
+  height: 600px;
 }
 
 .blog-header h3{
-  font-size: 54px;
+  font-size: 81px;
   word-spacing: 6px;
 }
 
 .blog-header {
   position: absolute;
   top: 210px;
-  left: 29%;
+  left: 30%;
   color: white;
   font-weight: 100;
   border: 9px solid white;
@@ -124,7 +134,7 @@
 }
 
 .nav li{
-  font-family: Bebas;
+  font-family: 'Alternate Gothic No1 D';
 }
 
 .navbar{
@@ -137,11 +147,16 @@
 .blog-header h3 a{
   color:white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .blog-header h3 a:hover{
   color:#ABAAAA;
   background:transparent;
+}
+
+.about-us-container{
+  height:420px;
 }
 
 

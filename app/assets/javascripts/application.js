@@ -44,10 +44,13 @@ $(document).ready(function(){
       if ($(window).scrollTop() > 801) {
         $('.navbar').addClass('navbar-fixed-top');
         $('.homepage-about-us').css('margin-top', '80px');
+        $('.feature-images-links').css('margin-top', '80px');
       }
       if ($(window).scrollTop() < 800) {
         $('.navbar').removeClass('navbar-fixed-top');
         $('.homepage-about-us').css('margin-top', '0px');
+        $('.feature-images-links').css('margin-top', '0px');
+
 
       }
     });
