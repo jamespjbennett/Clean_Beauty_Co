@@ -34,8 +34,20 @@ $(document).ready(function(){
 
   // HOMEPAGE FUNCTIONS ***************
   console.log('hello')
+  $('.feature-images-links div h2').hide();
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
+  $('.product-image img').hover(function(){
+    $(this).siblings().first().slideDown(); 
+    $(this).fadeTo( "fast" , 0.5, function() {
+      });
+  })
+  $('.product-image img').mouseleave(function(){
+    $(this).siblings().first().slideUp();
+    $(this).fadeTo( "fast" , 1, function() {
+      });
+  })
+
   $(window).scroll(function () {
         //if you hard code, then use console
         //.log to determine when you want the 

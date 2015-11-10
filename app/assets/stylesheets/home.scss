@@ -82,9 +82,16 @@
 }
 
 .feature-images-links div h2{
+  position:absolute;
   font-weight: bold;
-  border-bottom: 2px dotted #BCBCBC;
-  
+  font-size: 47px;
+  letter-spacing: 2px;
+  top: 26%;
+  left: 30%; 
+}
+
+.feature-images-links div h2 a{
+  color:white;
 }
 
 .feature-images-links{
