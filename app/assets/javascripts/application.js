@@ -38,20 +38,15 @@ $(document).ready(function(){
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
   $('.product-image img').hover(function(){
-    $(this).siblings().first().slideDown(); 
-    $(this).fadeTo( "fast" , 0.5, function() {
-      });
+    $(this).siblings().first().slideDown('10'); 
+    $(this).animate({opacity: 0.5}, 50)
   })
   $('.product-image img').mouseleave(function(){
-    $(this).siblings().first().slideUp();
-    $(this).fadeTo( "fast" , 1, function() {
-      });
+    $(this).siblings().first().slideUp('10');
+    $(this).animate({opacity:1}, 50);
   })
 
-  $(window).scroll(function () {
-        //if you hard code, then use console
-        //.log to determine when you want the 
-        //nav bar to stick.  
+  $(window).scroll(function () { 
         console.log($(window).scrollTop())
       if ($(window).scrollTop() > 801) {
         $('.navbar').addClass('navbar-fixed-top');
