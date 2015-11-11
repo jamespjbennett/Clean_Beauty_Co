@@ -48,6 +48,7 @@
   font-size: 40px;
   font-weight: bold;
   word-spacing: 6px;
+  color: white;
 }
 .homepage-about-us p{
   font-size: 22px;
@@ -55,6 +56,7 @@
   line-height: 150%;
   font-family: 'Futura';
   margin-top: 5%;
+  color: white;
 }
 
 .header-taglines {
@@ -75,19 +77,22 @@
 }
 
 .navbar{
-  height: 80px!important;
+  height: 100px!important;
 }
 .products-feature{
   margin-left: 13%;
 }
 
+.product-image img{
+  border-radius: 150px;
+}
 .feature-images-links div h2{
   position:absolute;
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 2px;
-  top: 74%;
-  left: 9%;
+  top: 68%;
+  left: 27%;
 }
 
 .feature-images-links div h2 a{
@@ -95,7 +100,10 @@
 }
 
 .feature-images-links{
-  height: 400px;
+  height: 422px;
+  background: #DDDADA;
+  border-top: 15px solid #AFAFAF;
+  border-bottom: 15px solid #AFAFAF;
 }
 .recipes-feature, .products-feature, .ingredients-feature{
   margin-top:5%;
@@ -169,12 +177,21 @@
 
 .about-us-container{
   height:300px;
-  background: #DDDADA;
+  // background: #DDDADA;
 }
 
 .social-container{
   height:300px;
   background: #DDDADA;
+}
+
+.social-image{
+  margin-top: 30%;
+
+}
+
+.social-image img{
+  margin-left: 28%;
 }
 
 
