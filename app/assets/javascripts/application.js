@@ -38,11 +38,11 @@ $(document).ready(function(){
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
   $('.product-image img').hover(function(){
-    $(this).siblings().first().slideDown('10'); 
+    $(this).siblings().first().slideDown(100); 
     $(this).animate({opacity: 0.5}, 50)
   })
   $('.product-image img').mouseleave(function(){
-    $(this).siblings().first().slideUp('10');
+    $(this).siblings().first().slideUp(100);
     $(this).animate({opacity:1}, 50);
   })
 
