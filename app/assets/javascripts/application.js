@@ -30,12 +30,22 @@ function toggleAboutUsContent(){
 }
 
 function activateMenuDropdown(){
-  if($(this).hasClass('recipes-click-dropdown')){
-    $('.shop-dropdown').hide();
-    $('.recipes-dropdown').show();
-  } else{
-    $('.shop-dropdown').show();
-    $('.recipes-dropdown').hide();
+  if($($(this).children()[1]).is(":visible")){
+    $($(this).children()[1]).hide();
+  }else{
+    if($(this).hasClass('recipes-click-dropdown')){
+      $('.shop-dropdown').hide();
+      $('.events-dropdown').hide();
+      $('.recipes-dropdown').show();
+    } else if($(this).hasClass('product-click-dropdown')){
+      $('.shop-dropdown').show();
+      $('.recipes-dropdown').hide();
+      $('.events-dropdown').hide();
+    }else{
+      $('.shop-dropdown').hide();
+      $('.recipes-dropdown').hide();
+      $('.events-dropdown').show();
+    }
   }
 }
 
