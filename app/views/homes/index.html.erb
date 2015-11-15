@@ -2,14 +2,7 @@
   <%= javascript_include_tag "home.js" %>
 <% end %>
 
-<div class="main-header-image" data-parallax="scroll" data-image-src="<%= image_url 'faded-background.jpg' %>" data-speed="0.2"></div>
-<div class="header-logo-container">
-  <%= image_tag("logo.png") %>
-</div>
-<div class="header-taglines">
-  <h1>London-based pursuers of clean beauty </h1>
-  <h1>sharing natural and non-toxic beauty recipes</h1>
-</div>
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,6 +29,15 @@
     </div>
   </div>
 </nav>
+
+<div class="main-header-image" data-parallax="scroll" data-image-src="<%= image_url 'faded-background.jpg' %>" data-speed="0.2"></div>
+<div class="header-logo-container">
+  <%= image_tag("logo.png") %>
+</div>
+<div class="header-taglines">
+  <h1>London-based pursuers of clean beauty </h1>
+  <h1>sharing natural and non-toxic beauty recipes</h1>
+</div>
 
 <div class="homepage-content-container">
   <div class="about-us-container" data-parallax="scroll" data-image-src="<%= image_url 'faded-nametags-darker.jpg' %>" data-speed="0.4" >
