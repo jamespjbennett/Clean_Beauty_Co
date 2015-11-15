@@ -86,9 +86,9 @@
 .nav-header-width{
   width: 14%;
 }
-.products-feature{
-  margin-left: 13%;
-}
+// .products-feature{
+//   margin-left: 13%;
+// }
 .nav{
   width: 100%;
 }
@@ -102,6 +102,10 @@
   left: 5% !important;
 }
 
+.product-image{
+  height: 290px;
+}
+
 .recipes-dropdown{
   top: 90% !important;
   left: 5% !important;
@@ -109,6 +113,7 @@
 
 .product-image img{
   width: 100%;
+  height: 100%;
 }
 .feature-images-links div h2{
   position:absolute;
@@ -129,7 +134,7 @@
   border-top: 15px solid #AFAFAF;
   border-bottom: 15px solid #AFAFAF;
 }
-.recipes-feature, .products-feature, .ingredients-feature{
+.recipes-feature, .products-feature, .ingredients-feature, .placeholder-feature{
   margin-top:5%;
 }
 .nav-logo{
