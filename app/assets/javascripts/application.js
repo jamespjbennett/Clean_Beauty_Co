@@ -29,6 +29,16 @@ function toggleAboutUsContent(){
   }
 }
 
+function activateMenuDropdown(){
+  if($(this).hasClass('recipes-click-dropdown')){
+    $('.shop-dropdown').hide();
+    $('.recipes-dropdown').show();
+  } else{
+    $('.shop-dropdown').show();
+    $('.recipes-dropdown').hide();
+  }
+}
+
 
 $(document).ready(function(){
 
@@ -45,6 +55,8 @@ $(document).ready(function(){
     $(this).siblings().first().slideUp(100);
     $(this).animate({opacity:1}, 50);
   })
+
+  $('.separate-dropdown').on('click', activateMenuDropdown)
 
   // $(window).scroll(function () { 
   //       console.log($(window).scrollTop())
