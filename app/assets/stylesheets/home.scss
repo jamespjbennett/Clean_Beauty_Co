@@ -114,19 +114,24 @@
 .product-image img{
   width: 100%;
   height: 100%;
-  outline: 1px solid #9F9898;
+  outline: 3px solid rgb(211, 208, 208);
   outline-offset: -14px;
 }
 .feature-images-links div h2{
   position:absolute;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 21px;
   letter-spacing: 2px;
-  top: 68%;
-  left: 27%;
+  top: 38%;
+  left: 17%;
+  width: 66%;
+  background: white;
+  padding: 3%;
+  text-align: center;
 }
 
 .feature-images-links div h2 a{
+  color:black!important;
   color:white;
 }
 
