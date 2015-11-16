@@ -45,6 +45,7 @@
 .homepage-about-us h1{
   text-align: center;
   word-spacing: 6px;
+  font-family:  "Impact Label Reversed";
 }
 
 .homepage-about-us h1{
@@ -64,12 +65,16 @@
 
 .header-taglines {
   position: absolute;
-  left: 13%;
+  // left: 9%;
   top: 472px;
+  width:100%;
+  text-align: center;
 }
 .header-taglines h1{
   font-size: 44px;
   font-weight: bold;
+  font-family: "Impact Label Reversed";
+  width:100%;
   text-align: center;
   /* word-spacing: 6px; */
   letter-spacing: 2px;
