@@ -58,7 +58,9 @@
   font-size: 22px;
   text-align: left;
   line-height: 150%;
-  font-family: 'Futura';
+  font-family: Helvetica Neue;
+  font-weight: 100;
+  letter-spacing: 0.5px;
   margin-top: 5%;
   color: white;
 }
@@ -196,7 +198,9 @@
 }
 
 .nav li{
-  font-family: 'Futura';
+  font-family: 'Helvetica Neue';
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .navbar{
