@@ -7,3 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 BlogEntry.Delete_all
 
+BlogEntry.create(
+  title: "sdfsdf", Intro: 
+  )
