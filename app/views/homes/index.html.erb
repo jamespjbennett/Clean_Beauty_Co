@@ -3,44 +3,7 @@
 <% end %>
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="nav-logo nav-header-width"><%= image_tag("logo.png") %></li>
-        <li class="nav-header-width active"><a href="#">About Us <span class="sr-only">(current)</span></a></li>
-        <li class="nav-header-width  product-click-dropdown dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Shop", root_path) %>
-          <ul class="dropdown-menu shop-dropdown">
-            <li><%=link_to("Products", products_path) %></li>
-            <li><%=link_to("Ingredients", ingredients_path) %></li>
-          </ul>
-        </li>
-        <li class="nav-header-width dropdown recipes-click-dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Recipes", recipes_path) %>
-          <ul class="dropdown-menu recipes-dropdown">
-            <li><%=link_to("Skin Food", '#') %></li>
-            <li><%=link_to("DIY Beauty", '#') %></li>
-          </ul>
-        </li>
-        <li class="nav-header-width dropdown events-click-dropdown separate-dropdown "><%=link_to("Events", '#') %>
-          <ul class="dropdown-menu events-dropdown">
-            <li><%=link_to("Workshops", '#') %></li>
-          </ul>
-        </li>
-        <li class="nav-header-width"><%=link_to("Contact Us", root_path) %></li>
-        <li class="nav-header-width"><%=link_to("Blog", blog_entries_path) %></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 
 <div class="main-header-image" data-parallax="scroll" data-image-src="<%= image_url 'faded-background.jpg' %>" data-speed="0.2"></div>
 <div class="header-logo-container">
