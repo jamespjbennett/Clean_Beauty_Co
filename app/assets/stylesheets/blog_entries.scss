@@ -5,8 +5,10 @@
 .blog-container{
   margin-top: 100px;
 }
-.feature_blog_entry_container{
-  height: 300px;
+
+.blog-entry-container{
+  margin-bottom: 100px;
+  margin-left: 5%;
 }
 
 .blog-sidemenu{
@@ -29,6 +31,20 @@
   text-align:center;
 }
 
-.blog-placeholder, .blog-title, .introduction-blog-text{
+.blog-placeholder, .blog-title{
   text-align: center;
+
+}
+.introduction-blog-text{
+  font-size: 16px;
+  font-family: 'Helvetica Neue';
+  letter-spacing: 2px;
+  line-height: 127%;
+}
+
+h5.blog-placeholder{
+  margin-top: 21px;
+}
+.introduction-blog-text{
+margin-top: 20px;
 }

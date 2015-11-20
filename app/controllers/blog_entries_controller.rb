@@ -4,7 +4,7 @@ class BlogEntriesController < ApplicationController
   # GET /blog_entries
   # GET /blog_entries.json
   def index
-    @blog_entries = BlogEntry.all
+    @blog_entries = BlogEntry.all.sort.reverse
     @featured_blog_entry = BlogEntry.last
     @all_other_blog_entries = BlogEntry.where.not(id: @featured_blog_entry.id)
   end
