@@ -1,3 +1,25 @@
 // Place all the styles related to the blog_entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog-container{
+  margin-top: 100px;
+}
+.feature_blog_entry_container{
+  height: 300px;
+}
+
+.blog-sidemenu{
+  height:100%;
+  background:grey;
+  border: 1px solid pink;
+}
+
+.blog-entries-header h2{
+  text-align: center;
+}
+
+.blog-entries-header{
+  margin-top: 175px;
+  margin-bottom: 84px;
+}

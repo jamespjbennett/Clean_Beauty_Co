@@ -5,6 +5,8 @@ class BlogEntriesController < ApplicationController
   # GET /blog_entries.json
   def index
     @blog_entries = BlogEntry.all
+    @featured_blog_entry = BlogEntry.last
+    @all_other_blog_entries = BlogEntry.where.not(id: @featured_blog_entry.id)
   end
 
   # GET /blog_entries/1
