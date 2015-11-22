@@ -3,7 +3,6 @@ function revealMoreBlogPosts(){
   var allVisibleBlogEntries = $('.featured-blog-entry-container:visible');
   var nonVisibleBlogEntries = $('.featured-blog-entry-container:hidden');
   var firstNonVisible = allVisibleBlogEntries.last().next();
-  var nonVisibleBlogEntriesToShow = nonVisibleBlogEntries.slice(0, 6);
   for(i=0;i<6;i++){
     firstNonVisible.show();
     var firstNonVisible = $('.featured-blog-entry-container:visible').last().next();
@@ -17,7 +16,26 @@ function revealMoreBlogPosts(){
   window.scrollTo(0, 0);
 }
 
+function revealLessBlogPosts(){
+  var allBlogEntries = $('.featured-blog-entry-container');
+  var allVisibleBlogEntries = $('.featured-blog-entry-container:visible');
+  var nonVisibleBlogEntries = $('.featured-blog-entry-container:hidden');
+  var lastNonVisible = allVisibleBlogEntries.first().prev();
+  for(i=6;i>0;i--){
+    lastNonVisible.show();
+    var lastNonVisible = $('.featured-blog-entry-container:visible').first().prev();
+  }
+
+  allVisibleBlogEntries.hide();
+  if(allBlogEntries.first().is(':visible')){
+    $('#previous-blog-posts').show();
+    $('#newer-blog-posts').hide();
+  };
+  window.scrollTo(0, 0);
+}
+
 $(document).ready(function(){
   $('#previous-blog-posts').on('click', revealMoreBlogPosts);
+  $('#newer-blog-posts').on('click', revealLessBlogPosts);
   $('#newer-blog-posts').hide();
 })
