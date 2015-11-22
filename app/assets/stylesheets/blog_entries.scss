@@ -15,20 +15,20 @@
 
 .featured-blog-entry-container{
   background:white;
-  margin-top: 67px;
   padding: 39px;
   text-align: center;
 }
 
 .blog-sidemenu{
-  margin-top: 131px;
+  margin-top: 64px;
   background: #DFD0DF;
   // border: 1px solid pink;
 }
 
 .blog-entries-header h1{
   text-align: center;
-  font-size: 55px;
+  font-size: 91px;
+  font-family: "Impact Label Reversed";
 }
 
 .blog-entries-header{
@@ -154,7 +154,7 @@ h5.blog-placeholder{
   width: 100%;
 }
 
-.about-us-sidemenu-container h4, .sidemenu-social-container h4, .facebook-sidebar-container h4{
+.about-us-sidemenu-container h4, .sidemenu-social-container h4, .facebook-sidebar-container h4, .sidebar-latest-posts-container h4{
   text-align: center;
   margin-bottom: 14%;
   border-bottom: 1px solid #D0CCCC;
@@ -173,7 +173,7 @@ h5.blog-placeholder{
   margin-bottom: 30%;
 }
 
-.about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span{
+.about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span, .sidebar-latest-posts-container h4 span{
   background: #DFD0DF!important;
   padding:0 10px;
 }
@@ -189,3 +189,24 @@ h5.blog-placeholder{
   margin-left: 6%;
 }
 
+.sidemenu-social-container{
+  margin-bottom: 26%;
+}
+
+.sidebar-blog-entry img{
+  width: 36%;
+  float:left;
+}
+
+.sidebar-blog-entry h5{
+  margin-left: 45%;
+  margin-bottom: 8%;
+}
+
+.sidebar-blog-entry p{
+  font-family: Helvetica Neue;
+  font-style: italic;
+  font-size: 11px;
+  margin-left: 45%;
+  margin-bottom: 31%;
+}

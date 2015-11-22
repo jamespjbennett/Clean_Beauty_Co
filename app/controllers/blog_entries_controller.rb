@@ -7,6 +7,7 @@ class BlogEntriesController < ApplicationController
     @blog_entries = BlogEntry.all.sort.reverse
     @featured_blog_entry = BlogEntry.last
     @all_other_blog_entries = BlogEntry.where.not(id: @featured_blog_entry.id)
+    @latest_blog_entries = @blog_entries[0..3]
   end
 
   # GET /blog_entries/1

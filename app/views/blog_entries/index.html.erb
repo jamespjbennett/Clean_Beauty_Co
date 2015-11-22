@@ -48,6 +48,16 @@
       <h4><span>Find Us on Facebook</span></h4>
       <div class="fb-page" data-href="https://www.facebook.com/cleanbeautyco" data-width="250px" data-height="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/cleanbeautyco"><a href="https://www.facebook.com/cleanbeautyco">Clean Beauty Co</a></blockquote></div></div>
     </div>
+    <div class="sidebar-latest-posts-container">
+      <h4><span>Latest Posts</span></h4>
+      <% @latest_blog_entries.each do |entry| %>
+        <div class="sidebar-blog-entry">
+          <%= image_tag(entry.image) %>
+          <h5> <%= entry.title %></h5>
+          <p> <%= entry.created_at.strftime('%a %d %b %Y') %></p>
+        </div>
+      <% end %>
+    </div>
   </div>
   <div class="all-preview-posts-container col-sm-8">
     <% @blog_entries.each do |entry| %>
