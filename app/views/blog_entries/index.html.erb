@@ -2,18 +2,18 @@
   <div class="blog-entries-header">
     <h1>Clean Beauty Co Blog</h1>
   </div>
-  <% @blog_entries.each do |entry| %>
-    <div class="blog-entry-container col-sm-9"> 
+  <div class="blog-entry-container col-sm-8"> 
+    <% @blog_entries.each do |entry| %>
       <div class="featured-blog-entry-container">
         <div class="feature-blog-image blog-entry-image">
           <%= image_tag(entry.image)%>
         </div>
         <h5 class="blog-placeholder">Placeholder</h5>
-        <h3 class="blog-title"><%= entry.title %></h1>
+        <h3 class="blog-title"><%= entry.title %></h3>
         <p class="introduction-blog-text"> <%= entry.introduction_text %></p>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
   <div class="blog-sidemenu col-sm-3"> 
   </div>
 </div>

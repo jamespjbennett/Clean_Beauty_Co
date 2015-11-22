@@ -9,14 +9,21 @@
 .blog-entry-container{
   margin-bottom: 100px;
   margin-left: 5%;
-  background:white;
+  // background:white;
   padding: 64px;
 }
 
+.featured-blog-entry-container{
+  background:white;
+  margin-top: 67px;
+  padding: 39px;
+}
+
 .blog-sidemenu{
-  height:100%;
+  height:1000px;
   background:grey;
-  border: 1px solid pink;
+  margin-top: 131px;
+  // border: 1px solid pink;
 }
 
 .blog-entries-header h1{
@@ -26,7 +33,6 @@
 
 .blog-entries-header{
   margin-top: 142px;
-  margin-bottom: 84px;
 }
 
 .blog-entry-image{
@@ -38,7 +44,7 @@
 
 }
 .introduction-blog-text{
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Helvetica Neue';
   letter-spacing: 2px;
   line-height: 127%;
@@ -46,7 +52,18 @@
 
 h5.blog-placeholder{
   margin-top: 21px;
+  color: #C29BC2;
 }
 .introduction-blog-text{
 margin-top: 20px;
+}
+
+.blog-title{
+  font-size: 36px;
+}
+.feature-blog-image {
+  width: 100%;
+}
+.feature-blog-image img{
+  max-width: 100%;
 }
