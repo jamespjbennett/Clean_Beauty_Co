@@ -98,6 +98,15 @@ h5.blog-placeholder{
 .featured-blog-entry-container:nth-child(n+7){
   display:none;
 }
+
+.preview-blog-post-container:nth-child(-n+6){
+  display:none;
+}
+
+.preview-blog-post-container:nth-child(n+13){
+  display:none;
+}
+
 .preview-image-container img{
   height: 175px;
 
