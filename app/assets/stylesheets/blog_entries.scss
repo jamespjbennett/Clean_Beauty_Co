@@ -85,3 +85,7 @@ h5.blog-placeholder{
 .blog-read-more:hover{
   background: #FFF2FF;
 }
+
+.featured-blog-entry-container:nth-child(n+7){
+  display:none;
+}
