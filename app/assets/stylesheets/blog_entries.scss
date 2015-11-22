@@ -86,6 +86,11 @@ h5.blog-placeholder{
   background: #FFF2FF;
 }
 
+#more-blog-posts{
+  float:right;
+  background: white!important;
+}
+
 .featured-blog-entry-container:nth-child(n+7){
   display:none;
 }
