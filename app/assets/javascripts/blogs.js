@@ -23,7 +23,6 @@ function revealMoreBlogPosts(){
   }else{
     var firstNonVisiblePreview = $('.preview-blog-post-container').first();
   }
-  debugger
   for(i=0;i<6;i++){
     firstNonVisiblePreview.show();
     var firstNonVisiblePreview = firstNonVisiblePreview.next()
@@ -48,6 +47,21 @@ function revealLessBlogPosts(){
   $('#previous-blog-posts').show();
 
   window.scrollTo(0, 0);
+
+  var allPreviewBlogEntries = $('.preview-blog-post-container');
+  var allVisiblePreviewBlogEntries = $('.preview-blog-post-container:visible');
+  var nonVisiblePreviewBlogEntries = $('.preview-blog-post-container:hidden');
+  // debugger
+  if(allPreviewBlogEntries.first().is(':hidden')){
+    var firstNonVisiblePreview = allVisiblePreviewBlogEntries.first().prev();
+  }else{
+    var firstNonVisiblePreview = $('.preview-blog-post-container').last();
+  }
+  for(i=6;i>0;i--){
+    firstNonVisiblePreview.show();
+    var firstNonVisiblePreview = firstNonVisiblePreview.prev()
+  }
+  allVisiblePreviewBlogEntries.hide();
 }
 
 $(document).ready(function(){
