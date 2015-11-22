@@ -8,11 +8,16 @@ function revealMoreBlogPosts(){
     firstNonVisible.show();
     var firstNonVisible = $('.featured-blog-entry-container:visible').last().next();
   }
-  
 
   allVisibleBlogEntries.hide();
+  if(allBlogEntries.last().is(':visible')){
+    $('#previous-blog-posts').hide();
+    $('#newer-blog-posts').show();
+  };
+  window.scrollTo(0, 0);
 }
 
 $(document).ready(function(){
-  $('#more-blog-posts').on('click', revealMoreBlogPosts)
+  $('#previous-blog-posts').on('click', revealMoreBlogPosts);
+  $('#newer-blog-posts').hide();
 })
