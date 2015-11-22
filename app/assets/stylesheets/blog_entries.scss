@@ -17,6 +17,7 @@
   background:white;
   margin-top: 67px;
   padding: 39px;
+  text-align: center;
 }
 
 .blog-sidemenu{
@@ -55,7 +56,8 @@ h5.blog-placeholder{
   color: #C29BC2;
 }
 .introduction-blog-text{
-margin-top: 20px;
+  margin-top: 20px;
+  text-align: left!important;
 }
 
 .blog-title{
@@ -66,4 +68,16 @@ margin-top: 20px;
 }
 .feature-blog-image img{
   max-width: 100%;
+}
+.blog-read-more{
+  width: 151px;
+  height: 40px;
+  background: transparent;
+  margin-top: 19px;
+  border: 2px solid #C29BC2;
+  color: #C29BC2;
+}
+
+.blog-read-more:hover{
+  background: #FFF2FF;
 }
