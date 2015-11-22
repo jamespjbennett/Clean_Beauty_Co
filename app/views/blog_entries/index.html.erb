@@ -11,7 +11,7 @@
         <h5 class="blog-placeholder">Placeholder</h5>
         <h3 class="blog-title"><%= entry.title %></h3>
         <p class="introduction-blog-text"> <%= entry.introduction_text %></p>
-        <button class="blog-read-more">READ MORE</button>
+        <button class="blog-read-more"> <%= link_to "READ MORE", blog_entry_path(entry)%> </button>
       </div>
     <% end %>
   </div>
