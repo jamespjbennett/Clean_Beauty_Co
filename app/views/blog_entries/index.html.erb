@@ -21,9 +21,15 @@
   </div>
   <div class="all-preview-posts-container col-sm-8">
     <% @blog_entries.each do |entry| %>
-      <div class="preview-blog-post-container col-sm-6">
+      <div class="preview-blog-post-container col-sm-4">
         <div class="preview-image-container">
-          <%= image_tag(entry.image)%>
+          <div class="blog-preview-image">
+            <%= image_tag(entry.image)%>
+          </div>
+        </div>
+        <div class="blog-preview-header">
+          <p>Placeholder</p>
+          <h3><%= entry.title %></h3>
         </div>
       </div>
     <% end %>
