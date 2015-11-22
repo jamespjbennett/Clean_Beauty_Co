@@ -21,9 +21,8 @@
 }
 
 .blog-sidemenu{
-  height:1000px;
-  background:grey;
   margin-top: 131px;
+  background: #DFD0DF;
   // border: 1px solid pink;
 }
 
@@ -150,3 +149,43 @@ h5.blog-placeholder{
   font-family: 'Futura', sans-serif;
   color: #C29BC2;
 }
+
+.about-us-sidebar-image img{
+  width: 100%;
+}
+
+.about-us-sidemenu-container h4, .sidemenu-social-container h4, .facebook-sidebar-container h4{
+  text-align: center;
+  margin-bottom: 14%;
+  border-bottom: 1px solid #D0CCCC;
+  line-height:0.1em; 
+  margin:10px 0 20px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+
+.about-us-sidebar-text p {
+  font-size: 14px;
+  font-family: Helvetica Neue;
+  margin-top: 8%;
+  letter-spacing: 1px;
+  line-height: 154%;
+  margin-bottom: 30%;
+}
+
+.about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span{
+  background: #DFD0DF!important;
+  padding:0 10px;
+}
+.sidebar-social-button-image{
+  display: inline-block;
+  margin-right: 19px;
+}
+.sidebar-social-buttons div img{
+  width: 50px;
+}
+
+.fb-page{
+  margin-left: 6%;
+}
+
