@@ -14,6 +14,21 @@ function revealMoreBlogPosts(){
   };
   $('#newer-blog-posts').show();
   window.scrollTo(0, 0);
+
+  var allPreviewBlogEntries = $('.preview-blog-post-container');
+  var allVisiblePreviewBlogEntries = $('.preview-blog-post-container:visible');
+  var nonVisiblePreviewBlogEntries = $('.preview-blog-post-container:hidden');
+  if(allPreviewBlogEntries.last().is(':hidden')){
+    var firstNonVisiblePreview = allVisiblePreviewBlogEntries.last().next();
+  }else{
+    var firstNonVisiblePreview = $('.preview-blog-post-container').first();
+  }
+  debugger
+  for(i=0;i<6;i++){
+    firstNonVisiblePreview.show();
+    var firstNonVisiblePreview = firstNonVisiblePreview.next()
+  }
+  allVisiblePreviewBlogEntries.hide();
 }
 
 function revealLessBlogPosts(){
