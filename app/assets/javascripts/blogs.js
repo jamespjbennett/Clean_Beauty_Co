@@ -11,8 +11,8 @@ function revealMoreBlogPosts(){
   allVisibleBlogEntries.hide();
   if(allBlogEntries.last().is(':visible')){
     $('#previous-blog-posts').hide();
-    $('#newer-blog-posts').show();
   };
+  $('#newer-blog-posts').show();
   window.scrollTo(0, 0);
 }
 
@@ -28,9 +28,10 @@ function revealLessBlogPosts(){
 
   allVisibleBlogEntries.hide();
   if(allBlogEntries.first().is(':visible')){
-    $('#previous-blog-posts').show();
     $('#newer-blog-posts').hide();
   };
+  $('#previous-blog-posts').show();
+
   window.scrollTo(0, 0);
 }
 
