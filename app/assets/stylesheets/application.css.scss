@@ -27,7 +27,7 @@ a:hover{
 
 @font-face {
   font-family: 'Impact Label Reversed';
-  src: font-url(asset-path('Impact_Label_Reversed.ttf')) format('ttf');
+  src: url(/assets/'Impact_Label_Reversed.ttf') format('ttf');
 }
 
 // @font-face {
