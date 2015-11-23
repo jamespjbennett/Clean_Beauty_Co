@@ -33,7 +33,7 @@ body{
 
 .header-logo-container img {
     position: absolute;
-    width: 21%;
+    width: 17%;
     left: 40%;
     top: 157px;
 }
@@ -59,25 +59,25 @@ body{
   color: white;
 }
 .homepage-about-us p{
-  font-size: 22px;
+  font-size: 1.5vw;
   text-align: left;
   line-height: 150%;
   font-family: Helvetica Neue;
   font-weight: 100;
   letter-spacing: 0.5px;
-  margin-top: 5%;
+  margin-top: 20px;
   color: white;
 }
 
 .header-taglines {
   position: absolute;
   // left: 9%;
-  top: 472px;
+  top: 60%;
   width:100%;
   text-align: center;
 }
 .header-taglines h1{
-  font-size: 44px;
+  font-size: 40px;
   font-weight: bold;
   font-family: "Impact Label Reversed";
   width:100%;
@@ -114,7 +114,9 @@ body{
 }
 
 .product-image{
-  height: 290px;
+  height: 72%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .recipes-dropdown{
@@ -133,7 +135,7 @@ body{
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 2px;
-  top: 38%;
+  top: 28%;
   left: 17%;
   width: 66%;
   background: white;
@@ -153,10 +155,11 @@ body{
   border-bottom: 15px solid #AFAFAF;
 }
 .recipes-feature, .products-feature, .ingredients-feature, .placeholder-feature{
-  margin-top:5%;
+  margin-top: 53px;
+  height: 100%;
 }
 .nav-logo{
-  width: 11%;
+  width: 132px;
 }
 
 .nav-logo img{
@@ -183,14 +186,14 @@ body{
 }
 
 .blog-header h3{
-  font-size: 39px;
+  font-size: 3vw;
   word-spacing: 6px;
 }
 
 .blog-header {
   position: absolute;
-  top: 180px;
-  left: 30%;
+  top: 158px;
+  left: 32%;
   color: white;
   font-weight: 100;
   border: 9px solid white;

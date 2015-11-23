@@ -33,6 +33,14 @@ a:hover{
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Impact Label Reversed';
+  src: asset_url('Impact_Label_Reversed.ttf');
+  src: asset_url('Impact_Label_Reversed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // @font-face {
 //     font-family: 'action_manregular';
 //     src: asset-url('Action_Man-webfont.eot');
