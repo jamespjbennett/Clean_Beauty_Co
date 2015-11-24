@@ -15,6 +15,16 @@ RailsAdmin.config do |config|
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
+  config.model BlogEntry do
+    edit do
+      field :content
+      field :content, :rich_editor do
+        config({
+          :insert_many => true
+        })
+      end
+    end
+  end
 
   config.actions do
     dashboard                     # mandatory

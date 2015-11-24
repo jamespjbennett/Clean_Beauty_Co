@@ -1,3 +1,15 @@
+GIT
+  remote: git://github.com/bastiaanterhorst/rich.git
+  revision: b4cc4e321eb36d8f1e0fd0a98dbc47abc2df1c36
+  specs:
+    rich (1.4.8)
+      jquery-rails
+      kaminari
+      mime-types
+      rack-raw-upload
+      rails (>= 3.2.0)
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,6 +54,10 @@ GEM
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -78,17 +94,26 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
+    mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.2)
     nested_form (0.3.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    paperclip (4.3.2)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     pg (0.18.2)
     rack (1.6.4)
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
       rack (~> 1.1)
+    rack-raw-upload (1.1.1)
+      multi_json
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -180,10 +205,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  paperclip
   pg
   rails (= 4.2.1)
   rails_12factor
   rails_admin
+  rich!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
