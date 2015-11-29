@@ -1,16 +1,33 @@
 <div class="blog-entries-header">
-  <h1></h1>
+  <h1><%= @blog_entry.title %></h1>
+
 </div>
 <div class="blog-entry-container col-sm-8"> 
-    <div class="featured-blog-entry-container">
-      <div class="feature-blog-image blog-entry-image">
-        <%= image_tag(@blog_entry.image)%>
-      </div>
-      <!-- <h5 class="blog-placeholder">Placeholder</h5> -->
-      <h3 class="blog-title"><%= @blog_entry.title %></h3>
-      <p class="introduction-blog-text"> <%= simple_format(@blog_entry.introduction_text) %></p>
-      <p class="introduction-blog-text"> <%= simple_format(@blog_entry.content) %></p>
+  <div class="featured-blog-entry-container">
+    <div class="feature-blog-image blog-entry-image">
+      <%= image_tag(@blog_entry.image)%>
     </div>
+    <!-- <h5 class="blog-placeholder">Placeholder</h5> -->
+    <p class="introduction-blog-text"> <%= simple_format(@blog_entry.introduction_text) %></p>
+    <p class="introduction-blog-text"> <%= simple_format(@blog_entry.content) %></p>
+    <div class="addthis_sharing_toolbox"></div>
+  </div>
+  <div class="all-preview-posts-container ">
+    <% @blog_entries.each do |entry| %>
+      <div class="preview-blog-post-container col-sm-4">
+        <div class="preview-image-container">
+          <div class="blog-preview-image">
+            <%=link_to(image_tag(entry.image),blog_entry_path(entry)) %>
+          </div>
+        </div>
+        <div class="blog-preview-header">
+          <!-- <p>Placeholder</p> -->
+          <h3><%= link_to(entry.title, blog_entry_path(entry)) %></h3>
+        </div>
+      </div>
+    <% end %>
+  </div> 
+
  <!--  <button class="blog-read-more" id="previous-blog-posts">OLDER POSTS</button>
   <button class="blog-read-more" id="newer-blog-posts">NEWER POSTS</button>  -->
 </div>
@@ -43,6 +60,14 @@
       <div class="col-sm-2"></div>
     </div>
   </div>
+  <div class="instagram-sidebar-container">
+    <h4><span>Find Us on Instagram</span></h4>
+    <div class="col-sm-2"></div>
+    <!-- SnapWidget -->
+    <script src="http://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="http://snapwidget.com/in/?u=Y2xlYW5iZWF1dHljb3xpbnwyNTB8M3wzfHxub3w1fGZhZGVJbnxvblN0YXJ0fHllc3x5ZXM=&ve=291115" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+    <div class="col-sm-2"></div>
+  </div>
   <div class="facebook-sidebar-container">
     <h4><span>Find Us on Facebook</span></h4>
     <div class="col-sm-2"></div>
@@ -60,18 +85,4 @@
     <% end %>
   </div>
 </div>
-<div class="all-preview-posts-container col-sm-8">
-  <% @blog_entries.each do |entry| %>
-    <div class="preview-blog-post-container col-sm-4">
-      <div class="preview-image-container">
-        <div class="blog-preview-image">
-          <%= image_tag(entry.image)%>
-        </div>
-      </div>
-      <div class="blog-preview-header">
-        
-        <h3><%= entry.title %></h3>
-      </div>
-    </div>
-  <% end %>
-</div>
+

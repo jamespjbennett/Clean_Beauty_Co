@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565b7c628efd1726" async="async"></script>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -59,7 +60,7 @@
             <li><%=link_to("Workshops", '#') %></li>
           </ul>
         </li>
-        <li class="col-sm-2 nav-header-width"><%=link_to("Contact Us", root_path) %></li>
+        <li class="col-sm-2 nav-header-width"><%=link_to("Contact Us", new_contact_path) %></li>
         <li class="col-sm-2 nav-header-width"><%=link_to("Blog", blog_entries_path) %></li>
       </ul>
     </div>
