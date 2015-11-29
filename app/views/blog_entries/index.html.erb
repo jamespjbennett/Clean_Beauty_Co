@@ -19,7 +19,7 @@
         <div class="preview-blog-post-container col-sm-4">
           <div class="preview-image-container">
             <div class="blog-preview-image">
-              <%= image_tag(entry.image)%>
+              <%=link_to(image_tag(entry.image),blog_entry_path(entry)) %>
             </div>
           </div>
           <div class="blog-preview-header">
