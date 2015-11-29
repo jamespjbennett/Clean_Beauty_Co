@@ -118,20 +118,21 @@ h5.blog-placeholder{
 .blog-preview-image{
   overflow:hidden;
   height: 80%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .preview-image-container{
   background: white;
   text-align: center;
-  padding: 11%;
   overflow:hidden;
   height: 334px;
   margin-bottom: 30px;
 }
 .all-preview-posts-container{
-  margin-left:4%;
+  width: 103.6%;
+  margin-left: -1.8%;
+  margin-top: 13%;
 }
 
 .blog-preview-header h3{

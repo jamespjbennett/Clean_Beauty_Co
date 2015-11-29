@@ -3,19 +3,32 @@
     <h1>Clean Beauty Co Blog</h1>
   </div>
   <div class="blog-entry-container col-sm-8"> 
-    <% @blog_entries.each do |entry| %>
-      <div class="featured-blog-entry-container">
-        <div class="feature-blog-image blog-entry-image">
-          <%= image_tag(entry.image)%>
-        </div>
-        <h5 class="blog-placeholder">Placeholder</h5>
-        <h3 class="blog-title"><%= entry.title %></h3>
-        <p class="introduction-blog-text"> <%= entry.introduction_text %></p>
-        <button class="blog-read-more"> <%= link_to "READ MORE", blog_entry_path(entry)%> </button>
+    <div class="featured-blog-entry-container">
+      <div class="feature-blog-image blog-entry-image">
+        <%= image_tag(@blog_entries_first.image)%>
       </div>
-    <% end %>
-    <button class="blog-read-more" id="previous-blog-posts">OLDER POSTS</button>
-    <button class="blog-read-more" id="newer-blog-posts">NEWER POSTS</button>
+      <h5 class="blog-placeholder">Placeholder</h5>
+      <h3 class="blog-title"><%= @blog_entries_first.title %></h3>
+      <p class="introduction-blog-text"> <%= @blog_entries_first.introduction_text %></p>
+      <button class="blog-read-more"> <%= link_to "READ MORE", blog_entry_path(@blog_entries_first)%> </button>
+    </div>
+    <!-- <button class="blog-read-more" id="previous-blog-posts">OLDER POSTS</button>
+    <button class="blog-read-more" id="newer-blog-posts">NEWER POSTS</button> -->
+    <div class="all-preview-posts-container ">
+      <% @blog_entries.each do |entry| %>
+        <div class="preview-blog-post-container col-sm-4">
+          <div class="preview-image-container">
+            <div class="blog-preview-image">
+              <%= image_tag(entry.image)%>
+            </div>
+          </div>
+          <div class="blog-preview-header">
+            <!-- <p>Placeholder</p> -->
+            <h3><%= entry.title %></h3>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
   <div class="blog-sidemenu col-sm-3"> 
     <div class="about-us-sidemenu-container">
@@ -63,20 +76,6 @@
       <% end %>
     </div>
   </div>
-  <div class="all-preview-posts-container col-sm-8">
-    <% @blog_entries.each do |entry| %>
-      <div class="preview-blog-post-container col-sm-4">
-        <div class="preview-image-container">
-          <div class="blog-preview-image">
-            <%= image_tag(entry.image)%>
-          </div>
-        </div>
-        <div class="blog-preview-header">
-          <p>Placeholder</p>
-          <h3><%= entry.title %></h3>
-        </div>
-      </div>
-    <% end %>
-  </div>
+  
   
 </div>
