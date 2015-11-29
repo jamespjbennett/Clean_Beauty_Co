@@ -24,7 +24,7 @@
           </div>
           <div class="blog-preview-header">
             <!-- <p>Placeholder</p> -->
-            <h3><%= entry.title %></h3>
+            <h3><%= link_to(entry.title, blog_entry_path(entry)) %></h3>
           </div>
         </div>
       <% end %>
