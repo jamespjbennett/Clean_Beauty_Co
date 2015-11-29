@@ -24,6 +24,12 @@ RailsAdmin.config do |config|
         })
       end
     end
+    field :title, :rich_picker do
+      config({
+        :allowed_styles => [:original],
+        :view_mode => "list"
+      })
+    end
   end
 
   config.actions do
