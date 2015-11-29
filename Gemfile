@@ -31,7 +31,8 @@ gem 'paperclip'
 gem 'mail_form'
 gem 'simple_form'
 gem 'devise'
-
+gem 'execjs' 
+gem 'therubyracer'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
