@@ -7,7 +7,7 @@
       <div class="feature-blog-image blog-entry-image">
         <%= image_tag(@blog_entries_first.image)%>
       </div>
-      <h5 class="blog-placeholder">Placeholder</h5>
+      <!-- <h5 class="blog-placeholder">Placeholder</h5> -->
       <h3 class="blog-title"><%= @blog_entries_first.title %></h3>
       <p class="introduction-blog-text"> <%= @blog_entries_first.introduction_text %></p>
       <button class="blog-read-more"> <%= link_to "READ MORE", blog_entry_path(@blog_entries_first)%> </button>
