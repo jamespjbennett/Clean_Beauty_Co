@@ -41,26 +41,26 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!-- <li class="nav-logo nav-header-width"><%#= link_to(image_tag("logo.png"), root_path) %></li> -->
-        <li class="nav-header-width "><a href="#">About Us <span class="sr-only">(current)</span></a></li>
-        <li class="nav-header-width  product-click-dropdown dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Shop", root_path) %>
+        <li class="nav-header-width col-sm-2"><a href="#">About Us <span class="sr-only">(current)</span></a></li>
+        <li class="col-sm-2 nav-header-width  product-click-dropdown dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Shop", root_path) %>
           <ul class="dropdown-menu shop-dropdown">
             <li><%=link_to("Products", products_path) %></li>
             <li><%=link_to("Ingredients", ingredients_path) %></li>
           </ul>
         </li>
-        <li class="nav-header-width dropdown recipes-click-dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Recipes", recipes_path) %>
+        <li class="col-sm-2 nav-header-width dropdown recipes-click-dropdown separate-dropdown" data-toggle="dropdown"><%=link_to("Recipes", recipes_path) %>
           <ul class="dropdown-menu recipes-dropdown">
             <li><%=link_to("Skin Food", '#') %></li>
             <li><%=link_to("DIY Beauty", '#') %></li>
           </ul>
         </li>
-        <li class="nav-header-width dropdown events-click-dropdown separate-dropdown "><%=link_to("Events", '#') %>
+        <li class="col-sm-2 nav-header-width dropdown events-click-dropdown separate-dropdown "><%=link_to("Events", '#') %>
           <ul class="dropdown-menu events-dropdown">
             <li><%=link_to("Workshops", '#') %></li>
           </ul>
         </li>
-        <li class="nav-header-width"><%=link_to("Contact Us", root_path) %></li>
-        <li class="nav-header-width"><%=link_to("Blog", blog_entries_path) %></li>
+        <li class="col-sm-2 nav-header-width"><%=link_to("Contact Us", root_path) %></li>
+        <li class="col-sm-2 nav-header-width"><%=link_to("Blog", blog_entries_path) %></li>
       </ul>
     </div>
   </div>
