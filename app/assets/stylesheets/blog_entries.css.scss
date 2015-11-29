@@ -98,13 +98,13 @@ h5.blog-placeholder{
   display:none;
 }
 
-.preview-blog-post-container:nth-child(-n+6){
-  display:none;
-}
+// .preview-blog-post-container:nth-child(-n+6){
+//   display:none;
+// }
 
-.preview-blog-post-container:nth-child(n+13){
-  display:none;
-}
+// .preview-blog-post-container:nth-child(n+13){
+//   display:none;
+// }
 
 .preview-image-container img{
   height: 244px;
@@ -126,7 +126,7 @@ h5.blog-placeholder{
   background: white;
   text-align: center;
   overflow:hidden;
-  height: 334px;
+  height: 316px;
   margin-bottom: 30px;
 }
 .all-preview-posts-container{
@@ -156,7 +156,7 @@ h5.blog-placeholder{
   width: 100%;
 }
 
-.about-us-sidemenu-container h4, .sidemenu-social-container h4, .facebook-sidebar-container h4, .sidebar-latest-posts-container h4{
+.about-us-sidemenu-container h4, .sidemenu-social-container h4, .facebook-sidebar-container h4, .sidebar-latest-posts-container h4, .instagram-sidebar-container h4{
   text-align: center;
   margin-bottom: 14%;
   border-bottom: 1px solid #BBB7B7;
@@ -175,7 +175,7 @@ h5.blog-placeholder{
   margin-bottom: 30%;
 }
 
-.about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span, .sidebar-latest-posts-container h4 span{
+.about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span, .sidebar-latest-posts-container h4 span, .instagram-sidebar-container h4 span{
   background: #F6CED8!important;
   padding:0 10px;
 }
