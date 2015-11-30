@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rails_12factor', group: :production
 
-gem 'rails_admin'
+gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'rich', github: 'bastiaanterhorst/rich'
 gem 'paperclip'
 gem 'mail_form'
