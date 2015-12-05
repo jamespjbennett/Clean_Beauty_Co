@@ -80,13 +80,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.assets.precompile += %w(   active_admin.css 
-                                    active_admin/print.css 
-                                    active_admin.js 
-                                    admin/chosen/chosen.css 
-                                    admin/chosen/chosen.js 
-                                    rich/editor.css
-                                  )
+
   config.action_mailer.default_url_options = { :host => 'polar-stream-9416.herokuapp.com' }
   Rails.application.routes.default_url_options[:host] = 'polar-stream-9416.herokuapp.com'
 
