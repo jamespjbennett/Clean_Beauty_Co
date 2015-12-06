@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :recipes
   resources :products
   resources :homes
+  resources :abouts
 
   root 'homes#index'
   match '/contacts',     to: 'contacts#new',             via: 'get'
