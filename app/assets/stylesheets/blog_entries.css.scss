@@ -21,7 +21,7 @@
 
 .blog-sidemenu{
   margin-top: 64px;
-  background: #F6CED8;
+  background: white;
   // border: 1px solid pink;
 }
 
@@ -29,6 +29,7 @@
   text-align: center;
   font-size: 91px;
   font-family: "Helvetica Neue";
+  font-weight: 100;
 }
 
 .blog-entries-header{
@@ -79,10 +80,14 @@ h5.blog-placeholder{
 
 .blog-read-more a{
   color: #C29BC2;
+  font-weight: 200;
+}
+.blog-preview-header h3{
+  font-weight:200;
 }
 
 .blog-read-more:hover{
-  background: #F6CED8;
+  background: white;
 }
 
 #previous-blog-posts{
@@ -153,6 +158,7 @@ h5.blog-placeholder{
   top: 57%;
   left: 20%;
   font-family: "Helvetica Neue";
+  font-weight: 100;
   color: #C29BC2;
 }
 
@@ -173,6 +179,7 @@ h5.blog-placeholder{
 .about-us-sidebar-text p {
   font-size: 14px;
   font-family: "Helvetica Neue";
+  font-weight: 100;
   margin-top: 8%;
   letter-spacing: 1px;
   line-height: 154%;
@@ -180,7 +187,7 @@ h5.blog-placeholder{
 }
 
 .about-us-sidemenu-container h4 span, .sidemenu-social-container h4 span, .facebook-sidebar-container h4 span, .sidebar-latest-posts-container h4 span, .instagram-sidebar-container h4 span{
-  background: #F6CED8!important;
+  background: white!important;
   padding:0 10px;
 }
 .sidebar-social-button-image{
@@ -215,6 +222,7 @@ h5.blog-placeholder{
 
 .sidebar-blog-entry p{
   font-family: "Helvetica Neue";
+  font-weight: 100;
   font-style: italic;
   font-size: 11px;
   margin-left: 45%;
@@ -224,6 +232,7 @@ h5.blog-placeholder{
 .featured-blog-entry-container p{
   text-align: left;
   font-family: "Helvetica Neue";
+  font-weight: 200;
   font-size: 16px;
   line-height: 148%;
   letter-spacing: 1px;

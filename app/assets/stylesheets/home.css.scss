@@ -14,6 +14,10 @@
 
 }
 
+img:hover{
+  cursor:image-url('pineapple.png');
+}
+
 .main-header-image img{
   opacity: 0.5!important;
   // margin-top:100px;
@@ -28,7 +32,7 @@
 // }
 
 body{
-  background: #F6CED8!important;
+  background: white!important;
 }
 
 .header-logo-container img {
@@ -54,7 +58,8 @@ body{
 
 .homepage-about-us h1{
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 300;
+  letter-spacing: 2px;
   word-spacing: 6px;
   color: white;
 }
@@ -63,6 +68,7 @@ body{
   text-align: left;
   line-height: 150%;
   font-family: "Helvetica Neue";
+  font-weight: 100;
   font-weight: 100;
   letter-spacing: 0.5px;
   margin-top: 20px;
@@ -80,6 +86,7 @@ body{
   font-size: 40px;
   font-weight: bold;
   font-family: "Helvetica Neue";
+  font-weight: 100;
   width:100%;
   text-align: center;
   /* word-spacing: 6px; */
@@ -140,7 +147,6 @@ body{
 }
 .feature-images-links div h2{
   position:absolute;
-  font-weight: bold;
   font-size: 15px;
   letter-spacing: 2px;
   top: 28%;
@@ -158,7 +164,7 @@ body{
 
 .feature-images-links{
   height: 422px;
-  background: #F6CED8;
+  background: white;
   // border-top: 15px solid #AFAFAF;
   // border-bottom: 15px solid #AFAFAF;
 }
@@ -202,7 +208,6 @@ body{
   top: 158px;
   left: 32%;
   color: white;
-  font-weight: 100;
   border: 9px solid white;
   padding: 10px 19px 32px 20px;
 }
@@ -218,6 +223,10 @@ body{
   margin-top: -3%;
 }
 
+.nav li a{
+  font-weight: 100;
+}
+
 .navbar{
   background:white;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(191,189,191,0.5);
@@ -229,6 +238,8 @@ body{
   color:white;
   text-decoration: none;
   font-weight: bold;
+  font-weight: 100;
+  letter-spacing: 5px;
 }
 
 .blog-header h3 a:hover{
@@ -243,7 +254,7 @@ body{
 
 .social-container{
   height:300px;
-  background: #F6CED8;
+  background: white;
   
 }
 
