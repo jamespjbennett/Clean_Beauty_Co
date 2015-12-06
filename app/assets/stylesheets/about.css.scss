@@ -10,12 +10,19 @@
   font-weight: 100;
   letter-spacing: 3px;
   margin-bottom: 3%;
+  text-align: center;
+  padding-top: 50px;
 }
 .about-us-section{
   width: 45%;
   margin: 0 auto;
-  margin-top: 10%;
 }
+
+.about-intro-container, .about-who-we-are-container, .about-why-we-do-container{
+  min-height: 508px;
+}
+
+
 
 .about-content{
   font-family: Helvetica Neue;
@@ -23,12 +30,26 @@
   font-size: 21px;
   line-height: 120%;
   width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-intro-container, .about-why-we-do-container{
+  background: #DFD0DF; 
 }
 
 .about-left{
   float: left;
   left: 0;
   margin-top: 5%;
+}
+
+.about-intro-container{
+  margin-top: 5.5%;
+}
+
+.about-intro-container .about-us-header{
+  padding-top: 12%;
 }
 
 .about-right{
