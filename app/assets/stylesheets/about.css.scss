@@ -9,13 +9,34 @@
 .about-us-header{
   font-weight: 100;
   letter-spacing: 3px;
+  margin-bottom: 3%;
 }
 .about-us-section{
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  margin-top: 10%;
 }
 
 .about-content{
   font-family: Helvetica Neue;
   font-weight: 200;
+  font-size: 21px;
+  line-height: 120%;
+  width: 80%;
+}
+
+.about-left{
+  float:left;
+}
+
+.about-right{
+  float:right;
+}
+
+.about-image{
+  width: 20%;
+}
+
+.about-image img{
+  width: 100%;
 }
