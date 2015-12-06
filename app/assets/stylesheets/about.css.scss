@@ -12,7 +12,7 @@
   margin-bottom: 3%;
 }
 .about-us-section{
-  width: 70%;
+  width: 45%;
   margin: 0 auto;
   margin-top: 10%;
 }
@@ -26,15 +26,20 @@
 }
 
 .about-left{
-  float:left;
+  float: left;
+  left: 0;
+  bottom: 83px;
 }
 
 .about-right{
-  float:right;
+  float: right;
+  right: 0;
+  bottom: 83px;
 }
 
 .about-image{
-  width: 20%;
+  position: absolute;
+  width: 23%;
 }
 
 .about-image img{
