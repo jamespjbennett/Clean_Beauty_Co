@@ -32,17 +32,8 @@
   <button class="blog-read-more" id="newer-blog-posts">NEWER POSTS</button>  -->
 </div>
 <div class="blog-sidemenu col-sm-3"> 
-  <div class="about-us-sidemenu-container">
-    <h4><span>About Us</span></h4>
-    <div class="about-us-sidebar-image">
-      <%= image_tag('elsdom.jpg') %>
-    </div>
-    <div class="about-us-sidebar-text">
-      <p>This is a Little paragraph that would be appropriate to introduce the about us page. Notice that I am writing more words to fill space.</p>
-    </div>
-  </div>
+
   <div class="sidemenu-social-container">
-    <h4><span>Connect With Us</span></h4>
     <div class="sidebar-social-buttons">
       <div class="col-sm-2"></div>
       <div class="sidebar-social-button-image col-sm-2">
@@ -74,15 +65,6 @@
     <div class="fb-page col-sm-8" data-href="https://www.facebook.com/cleanbeautyco" data-width="250px" data-height="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/cleanbeautyco"><a href="https://www.facebook.com/cleanbeautyco">Clean Beauty Co</a></blockquote></div></div>
     <div class="col-sm-2"></div>
   </div>
-  <div class="sidebar-latest-posts-container">
-    <h4><span>Latest Posts</span></h4>
-    <% @latest_blog_entries.each do |entry| %>
-      <div class="sidebar-blog-entry">
-        <%= image_tag(entry.image) %>
-        <h5> <%= entry.title %></h5>
-        <p> <%= entry.created_at.strftime('%a %d %b %Y') %></p>
-      </div>
-    <% end %>
-  </div>
+
 </div>
 
