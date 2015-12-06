@@ -28,13 +28,13 @@
 .about-left{
   float: left;
   left: 0;
-  bottom: 83px;
+  margin-top: 5%;
 }
 
 .about-right{
   float: right;
   right: 0;
-  bottom: 83px;
+  margin-top: -20%;
 }
 
 .about-image{
@@ -44,4 +44,12 @@
 
 .about-image img{
   width: 100%;
+}
+
+.about-image-container{
+  position:relative;
+}
+
+.about-why-we-do-container{
+  margin-bottom:11%;
 }
