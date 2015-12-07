@@ -197,6 +197,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.0.4)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     spring (1.3.6)
     sprockets (3.2.0)
       rack (~> 1.0)
@@ -236,7 +239,7 @@ DEPENDENCIES
   foreman
   jbuilder (~> 2.0)
   jquery-rails
-  mail_form
+  mail_form (~> 1.5.0.rc)
   paperclip
   pg
   rails (= 4.2.1)
@@ -245,6 +248,7 @@ DEPENDENCIES
   rich!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form (~> 3.0.0.rc)
   spring
   therubyracer
   turbolinks
