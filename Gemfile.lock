@@ -248,7 +248,7 @@ DEPENDENCIES
   rich!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  simple_form (~> 3.0.0.rc)
+  simple_form
   spring
   therubyracer
   turbolinks
