@@ -33,6 +33,7 @@ gem 'simple_form', '~> 3.1.0.rc'
 gem 'devise'
 gem 'execjs' 
 gem 'therubyracer'
+gem "glebtv-simple_captcha"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
