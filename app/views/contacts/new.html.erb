@@ -5,7 +5,7 @@
     <%= f.input :email, :required => true %>
     <%= f.input :subject, as: :subject %>
     <%= f.input :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
-    <%= show_simple_captcha %>
+    <%= f.simple_captcha :label => "Enter numbers.." %>
 
     <div class="hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
