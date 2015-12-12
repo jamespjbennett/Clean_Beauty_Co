@@ -7,27 +7,19 @@
   <%= yield :javascript_includes %>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,900,700' rel='stylesheet' type='text/css'>
 
+
   <%= csrf_meta_tags %>
 </head>
 <body>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565b7c628efd1726" async="async"></script>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '720557541411763',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=720557541411763";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -98,6 +90,7 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565b7c628efd1726" async="async"></script>
 
 </body>
 </html>

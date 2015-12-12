@@ -53,7 +53,11 @@ function activateMenuDropdown(){
 $(document).ready(function(){
 
   // HOMEPAGE FUNCTIONS ***************
-  console.log('hello')
+  // if(window.location.pathname.split('/')[1] == "blog_entries"){
+  //   if($('iframe').length <=3 ){
+  //     location.reload();
+  //   }
+  // }
   // $('.feature-images-links div h2').hide();
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
