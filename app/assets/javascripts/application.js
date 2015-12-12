@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require parallax
-//= require turbolinks
+//= require jquery.turbolinks
 //= require_tree .
 
 
@@ -51,7 +51,7 @@ function activateMenuDropdown(){
 
 
 $(document).ready(function(){
-
+  console.log('hello');
   // HOMEPAGE FUNCTIONS ***************
   // if(window.location.pathname.split('/')[1] == "blog_entries"){
   //   if($('iframe').length <=3 ){
