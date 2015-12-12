@@ -34,6 +34,8 @@ gem 'devise'
 gem 'execjs' 
 gem 'therubyracer'
 gem "glebtv-simple_captcha"
+gem "mini_magick"
+gem 'rmagick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
