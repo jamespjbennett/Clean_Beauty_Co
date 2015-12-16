@@ -22,6 +22,9 @@
   min-height: 396px;
 }
 
+.about-first{
+  bottom: -160px!important;
+}
 
 
 .about-content{
@@ -39,7 +42,7 @@
 }
 
 .about-left{
-  float: left;
+  margin-right: auto;
   left: 0;
   bottom: -490px;
 }
@@ -53,22 +56,23 @@
 }
 
 .about-right{
-  float: right;
+  margin-left: auto;
   right: 0;
   bottom: -57px;
 }
 
-.about-image{
-  position: absolute;
-  width: 23%;
-}
+
 
 .about-image img{
   width: 100%;
 }
 
 .about-image-container{
-  position:relative;
+  display:table;
+}
+
+.about-image{
+  display:table-cell;
 }
 
 .about-why-we-do-container{
