@@ -27,13 +27,17 @@
 
 .blog-entries-header h1{
   text-align: center;
-  font-size: 91px;
+  font-size: 50px;
   font-family: "Helvetica Neue";
   font-weight: 100;
 }
 
 .blog-entries-header{
   margin-top: 142px;
+}
+
+.at4-icon{
+  background-color: #F6CED8!important;
 }
 
 .blog-entry-image{
@@ -53,7 +57,7 @@
 
 h5.blog-placeholder{
   margin-top: 21px;
-  color: #C29BC2;
+  color: #F6CED8;
 }
 .introduction-blog-text{
   margin-top: 20px;
@@ -74,12 +78,12 @@ h5.blog-placeholder{
   height: 40px;
   background: transparent;
   margin-top: 19px;
-  border: 2px solid #C29BC2;
-  color: #C29BC2;
+  border: 2px solid #F6CED8;
+  color: #F6CED8;
 }
 
 .blog-read-more a{
-  color: #C29BC2;
+  color: #F6CED8;
   font-weight: 200;
 }
 .blog-preview-header h3{
@@ -159,7 +163,7 @@ h5.blog-placeholder{
   left: 20%;
   font-family: "Helvetica Neue";
   font-weight: 100;
-  color: #C29BC2;
+  color: #F6CED8;
 }
 
 .about-us-sidebar-image img{
@@ -208,6 +212,7 @@ h5.blog-placeholder{
 
 .sidemenu-social-container{
   margin-bottom: 46%;
+  margin-top: -32%;
 }
 
 .sidebar-blog-entry img{
