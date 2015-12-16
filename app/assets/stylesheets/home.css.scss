@@ -155,15 +155,12 @@ body{
   height: 100%;
 }
 .feature-images-links div h2{
-  position:absolute;
+  margin: 0 auto;
   font-size: 15px;
   letter-spacing: 2px;
-  top: 28%;
-  left: 17%;
-  width: 66%;
   background: white;
   padding: 3%;
-  text-align: center;
+  text-align: left;
 }
 
 .feature-images-links div h2 a{
@@ -172,7 +169,7 @@ body{
 }
 
 .feature-images-links{
-  height: 422px;
+  height: 454px;
   background: white;
   // border-top: 15px solid #AFAFAF;
   // border-bottom: 15px solid #AFAFAF;
