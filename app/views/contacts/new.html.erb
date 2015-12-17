@@ -1,6 +1,8 @@
 <div class="container">
   <h1 class="contact-header">Contact Us</h1>
+
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <p class="contact-intro">Go on, get in touch. We're dying to hear from you. </p>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :subject, as: :subject %>

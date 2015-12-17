@@ -18,6 +18,34 @@ border-color: #eed3d7;
 color: #b94a48;
 text-align: left;
 }
+abbr{
+	display:none;
+}
+
+#new_contact{
+	margin-top: 64px!important;
+	margin-bottom: 118px!important;
+}
+#new_contact input{
+	height: 40px!important;
+    width: 655px!important;
+    margin-bottom: 16px;
+
+}
+#contact_message{
+	width: 655px!important;
+}
+
+.form-actions input{
+	background: #F6CED8;
+    border: none;
+    font-family: "Helvetica Neue"!important;
+}
+.contact-intro{
+	font-family:  "Helvetica Neue";
+	font-size: 21px;
+	margin-bottom: 50px;
+}
 
 .alert-success {
 background-color: #dff0d8;
