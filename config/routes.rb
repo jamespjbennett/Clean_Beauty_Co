@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  mount Rich::Engine => '/rich', :as => 'rich'
+  mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount Rich::Engine => '/rich', :as => 'rich'
   resources :ingredients
   resources :blog_entries
   resources :stockists
