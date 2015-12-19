@@ -152,7 +152,6 @@ body{
 
 .product-image img{
   width: 100%;
-  height: 100%;
 }
 .feature-images-links div h2{
   margin: 0 auto;
@@ -161,6 +160,11 @@ body{
   background: white;
   padding: 3%;
   text-align: left;
+}
+
+.navbar-nav > li > .dropdown-menu li{
+  height: 30px;
+  margin-top:10px;
 }
 
 .feature-images-links div h2 a{
