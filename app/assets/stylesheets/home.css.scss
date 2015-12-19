@@ -160,6 +160,7 @@ body{
   background: white;
   padding: 3%;
   text-align: left;
+  margin-left: -3%;
 }
 
 .navbar-nav > li > .dropdown-menu li{
@@ -203,6 +204,9 @@ body{
 .blog-image-container img{
   height: 100%;
   margin-top: 4%;
+}
+.blog-products-seaparator-container{
+  height: 447px;
 }
 
 .placeholder-scroll{
