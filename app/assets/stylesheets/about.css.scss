@@ -18,15 +18,28 @@
   margin: 0 auto;
 }
 
+.about-image-container > img{
+    width: 50%;
+    vertical-align: bottom;
+}
+
 .about-intro-container{
   height: 312px!important;
 }
 .about-why-we-do-container{
   height: 505px;
 }
+.col-left{
+  padding-left: 0!important;
+}
 
 .about-first{
   bottom: -160px!important;
+}
+
+.col-right div img{
+  float:right;
+  margin-right: -15px;
 }
 
 
@@ -80,7 +93,9 @@
 }
 
 .about-image-container{
-  display:table;
+  display: table;
+  position: relative;
+  width: 100%;
 }
 .about-disclaimer-container{
   height: 366px;
