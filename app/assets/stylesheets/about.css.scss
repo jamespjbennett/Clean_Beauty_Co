@@ -18,8 +18,11 @@
   margin: 0 auto;
 }
 
-.about-intro-container, .about-who-we-are-container, .about-why-we-do-container{
-  min-height: 396px;
+.about-intro-container{
+  height: 241px!important;
+}
+.about-why-we-do-container{
+  height: 396px;
 }
 
 .about-first{
@@ -50,9 +53,16 @@
 .about-intro-container{
   margin-top: 5.5%;
 }
+.about-who-we-are-container{
+  height: 258px!important;
+}
+
+.second-about{
+  padding-top: 20px!important;
+}
 
 .about-intro-container .about-us-header{
-  padding-top: 12%;
+  padding-top: 7%;
 }
 
 .about-right{
@@ -60,7 +70,9 @@
   right: 0;
   bottom: -57px;
 }
-
+#contact_name, #contact_email, #contact_subject, #contact_message{
+  outline-color: grey!important;
+}
 
 
 .about-image img{
@@ -70,11 +82,18 @@
 .about-image-container{
   display:table;
 }
+.about-disclaimer-container{
+  height: 366px;
+}
 
 .about-image{
   display:table-cell;
 }
 
+.about-disclaimer-container  .about-us-section .about-us-header{
+      padding-top: 7%!important;
+}
+
 .about-why-we-do-container{
-  margin-bottom:11%;
+  margin-bottom: 0;
 }

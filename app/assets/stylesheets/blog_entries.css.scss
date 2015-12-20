@@ -93,6 +93,12 @@ h5.blog-placeholder{
 .blog-preview-header h3{
   font-weight:200;
 }
+.sidebar-social-button-image a img{
+  background: #F6CED8;
+}
+.sidebar-social-button-image{
+  margin-top: 21px;
+}
 
 .blog-read-more:hover{
   background: white;
@@ -159,6 +165,7 @@ h5.blog-placeholder{
   font-size: 15px;
   width: 80%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .blog-preview-header p{
@@ -184,6 +191,10 @@ h5.blog-placeholder{
   margin-bottom: 37px;
 }
 
+.instagram-sidebar-container{
+  padding-top: 20px;
+}
+
 .about-us-sidebar-text p {
   font-size: 14px;
   font-family: "Helvetica Neue";
@@ -203,6 +214,7 @@ h5.blog-placeholder{
 }
 .sidebar-social-buttons div img{
   width: 36px;
+  border-radius: 8px;
 }
 
 .fb-page{
