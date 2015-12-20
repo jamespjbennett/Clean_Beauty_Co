@@ -9,7 +9,7 @@
 }
 
 .main-header-image{
-  height: 800px;
+  height: 1000px;
   // margin-top:100px;
 
 }
@@ -18,10 +18,7 @@ img:hover{
   cursor:image-url('pineapple.png');
 }
 
-.main-header-image img{
-  opacity: 0.5!important;
-  // margin-top:100px;
-}
+
 
 // .parallax-mirror img{
 //   opacity: 0.5!important;
@@ -41,8 +38,7 @@ body{
 
 .header-logo-container img {
     position: absolute;
-    width: 17%;
-    left: 40%;
+    width: 100%;
     top: 114px;
 }
 
