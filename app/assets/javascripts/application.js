@@ -66,7 +66,14 @@ $(document).ready(function(){
   })
   $('.product-image img').mouseleave(function(){
     $(this).animate({opacity:1}, 50);
+  });
+
+  $('.preview-image-container img').hover(function(){
+    $(this).animate({opacity: 0.5}, 50)
   })
+  $('.preview-image-container img').mouseleave(function(){
+    $(this).animate({opacity:1}, 50);
+  });
 
   $('.separate-dropdown').on('click', activateMenuDropdown)
 

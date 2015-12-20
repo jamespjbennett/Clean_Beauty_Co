@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :products
   resources :homes
   resources :abouts
-
+  match '/press', to: 'press#press', via: 'get'
   root 'homes#index'
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
