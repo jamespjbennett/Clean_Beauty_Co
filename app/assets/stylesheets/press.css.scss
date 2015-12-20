@@ -1,5 +1,6 @@
 .press-container{
 	margin-top: 109px;
+	height:1000px;
 }
 
 .press-header h2, .press-content p{
@@ -20,10 +21,29 @@
 
 .press-content{
 	margin-bottom: 30px;
+	width: 50%;
+    margin: 0 auto;
 }
 
 .press-social-buttons{
 	margin:0 auto;
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.press-entries-container{
+	margin-top:86px;
+}
+
+.indiv_press_entry{
+	margin-bottom: 34px;
+}
+
+.indiv_press_entry  h5, .indiv_press_entry{
+	text-align:center;
+}
+
+.press-social-buttons-container{
+	margin-bottom: 70px;
+	margin-top: -55px;
 }
