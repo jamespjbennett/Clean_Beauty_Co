@@ -1,9 +1,12 @@
 <div class="diy-recipes-container">
+	<h1>DIY Beauty Recipes</h1>
 	<%@diy_recipes.each do |recipe| %>
-		<div class="indiv-recipe col-md-4">
-			<%=image_tag(recipe.image) %>
-			<h3><%= recipe.title %></h3>
-		</div>
+		<a href='/recipes/<%=recipe.id %>'>
+			<div class="indiv-recipe  col-xs-1 col-sm-4">
+				<%=image_tag(recipe.image) %>
+				<h3><%= recipe.title %></h3>
+			</div>
+		</a>
 		
 	<% end%>
 </div>

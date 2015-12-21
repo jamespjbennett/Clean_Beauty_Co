@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+<div class="col-sm-1 col-lg-2"></div>
+<div class="recipe-show-container col-sm-10 col-lg-8">
+	<div class="col-sm-6 left-column-recipe">
+		<h2>Recipe</h2>
+		<p><%= @recipe.description %></p>
+	</div>
+	<div class="col-sm-6 right-column-recipe">
+		<%= image_tag(@recipe.image) %>
+	</div>
+</div>
+<div class="col-sm-1 col-lg-2"></div>

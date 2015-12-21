@@ -87,6 +87,13 @@ $(document).ready(function(){
     $(this).animate({opacity:1}, 50);
   });
 
+  $('.indiv-recipe ').hover(function(){
+    $(this).find('img').animate({opacity: 0.5}, 50)
+  })
+  $('.indiv-recipe ').mouseleave(function(){
+    $(this).find('img').animate({opacity: 1}, 50)
+  })
+
   $('.separate-dropdown').on('click', activateMenuDropdown)
 
   // $(window).scroll(function () { 
