@@ -69,6 +69,8 @@ $(document).ready(function(){
     $('body').addClass('star-cursor');
   } else if(window.location.pathname == "/contacts/new"){
     $('body').addClass('strawb-cursor');
+  } else if(window.location.pathname == "/diy_beauty"){
+    $('body').addClass('carrot-cursor');
   }
   
   $('.homepage-about-us span').hide();
