@@ -59,6 +59,18 @@ $(document).ready(function(){
   //   }
   // }
   // $('.feature-images-links div h2').hide();
+  if(window.location.pathname == "/"){
+    $('body').addClass('cloud-cursor');
+  } else if(window.location.pathname == "/abouts"){
+    $('body').addClass('apple-cursor');
+  } else if(window.location.pathname == "/press"){
+    $('body').addClass('cloud-cursor');
+  } else if(window.location.pathname == "/blog_entries"){
+    $('body').addClass('star-cursor');
+  } else if(window.location.pathname == "/contacts/new"){
+    $('body').addClass('strawb-cursor');
+  }
+  
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
   $('.product-image img').hover(function(){

@@ -14,10 +14,30 @@
 
 }
 
-img:hover{
-  cursor:url(image_path('pineapple.png')), auto;
+
+
+.strawb-cursor{
+  cursor:url(image_path('strawb-cursor.png')), auto;
 }
 
+.star-cursor{
+  cursor:url(image_path('star-cursor.png')), auto;
+}
+.cloud-cursor{
+  cursor:url(image_path('cloud-cursor.png')), auto;
+}
+
+.mushroom-cursor{
+  cursor:url(image_path('mushroom-cursor.png')), auto;
+}
+
+.carrot-cursor{
+  cursor:url(image_path('carrot-cursor.png')), auto;
+}
+
+.apple-cursor{
+  cursor:url(image_path('apple-cursor.png')), auto;
+}
 
 
 
