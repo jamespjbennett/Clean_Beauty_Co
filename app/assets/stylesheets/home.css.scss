@@ -15,8 +15,10 @@
 }
 
 img:hover{
-  cursor:image-url('pineapple.png');
+  cursor:url(image_path('pineapple.png')), auto;
 }
+
+
 
 
 
@@ -110,7 +112,7 @@ body{
 .nav{
   width: 90%;
   float:right;
-  margin-top: -2%;
+  margin-top: -28px;
 }
 
 .home-logo{
