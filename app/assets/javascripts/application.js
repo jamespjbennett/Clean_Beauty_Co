@@ -49,6 +49,10 @@ function activateMenuDropdown(){
   }
 }
 
+function redirectToDIY(){
+  window.location.pathname = "/diy_beauty"
+};
+
 
 $(document).ready(function(){
   console.log('hello');
@@ -75,6 +79,7 @@ $(document).ready(function(){
   
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
+  $('.diy-beauty-link').on('click', redirectToDIY);
   $('.product-image img').hover(function(){
     $(this).animate({opacity: 0.5}, 50)
   })
