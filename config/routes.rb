@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   mount Rich::Engine => '/rich', :as => 'rich'
+  mount Commontator::Engine => '/commontator'
   resources :ingredients
   resources :blog_entries
   resources :stockists
