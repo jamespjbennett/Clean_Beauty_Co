@@ -112,3 +112,21 @@
 .about-why-we-do-container{
   margin-bottom: 0;
 }
+
+@media(max-width: 900px){
+  .about-image-container > img{
+    width: 100%;
+  }
+  .about-us-header{
+    font-size:20px;
+  }
+  .about-content{
+    font-size:17px;
+  }
+  .about-us-header, .second-about{
+    padding-top:0!important;
+  }
+  .about-intro-container .about-us-header{
+    padding-top:39px!important;
+  }
+}
