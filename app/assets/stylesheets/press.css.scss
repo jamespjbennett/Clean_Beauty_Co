@@ -47,3 +47,12 @@
 	margin-bottom: 70px;
 	margin-top: -55px;
 }
+
+@media(max-width: 900px){
+	.press-content{
+		width: 90%!important;
+	}
+	.press-social-buttons-container{
+		clear:both;
+	}
+}

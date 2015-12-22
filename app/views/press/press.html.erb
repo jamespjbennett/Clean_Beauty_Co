@@ -6,16 +6,16 @@
 		<p>Here is a collection of our press and writing pieces. Get in touch if you would like us to write for your publication on all things clean beauty!</p>
 	</div>
 
-	<div class="col-md-3"></div>
+	<div class="col-xs-0 col-sm-3"></div>
 	<div class="press-entries-container col-md-6">
 		<% @press_entries.each do |entry| %>
-			<div class="indiv_press_entry col-md-4">
+			<div class="indiv_press_entry col-xs-6 col-sm-4">
 				<%=link_to(image_tag(entry.image), entry.link) %>
 				<h5><%= entry.name%></h5>
 			</div>
 		<% end %>
 	</div>
-	<div class="col-md-3"></div>	
+	<div class="col-xs-0 col-sm-3"></div>	
 </div>
 <div class="press-social-buttons-container">
 	<div class="addthis_sharing_toolbox press-social-buttons"></div>
