@@ -99,3 +99,36 @@ ol {
 	display:block;
 	margin-left: 48%;
 }
+
+@media(max-width: 900px){
+  .indiv-recipe{
+    height: 180px;
+  }
+  .recipe-image{
+  	text-align:center;
+  }
+  .recipe-image img{
+  	float:none;
+  }
+  .recipe-sharebox{
+  	margin-left: 0;
+  }
+  .border-dotted {
+  	display:none;
+  }
+  .ingredients-column{
+  	width: 107%;
+  	margin-left: -3.5%;
+  	padding: 41px;
+  }
+  .shop-link{
+  	margin-bottom: 49px;
+    line-height: 120%;
+  }
+  .recipe-show-container{
+  	border-bottom:none;
+  }
+  .navbar-collapse{
+  	max-height: 747px!important;
+  }
+}
