@@ -376,6 +376,9 @@ body{
     width: 85px;
     position: absolute;
   }
+  .navbar-fixed-top, .navbar-fixed-bottom{
+    z-index: 100000000;
+  }
 }
 
 
