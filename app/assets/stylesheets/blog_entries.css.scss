@@ -262,3 +262,22 @@ h5.blog-placeholder{
   letter-spacing: 1px;
 
 }
+
+@media(max-width: 900px){
+  .blog-preview-header h3{
+    top: 75%;
+  }
+  .preview-blog-post-container{
+    z-index: 1000000;
+  }
+  .sidebar-social-buttons div img{
+    width: 78px;
+  }
+  .sidebar-social-button-image{
+    margin-top: 53px;
+    margin-bottom: 70px;
+  }
+  .fb_iframe_widget{
+    margin-left: 22%;
+  }
+}
