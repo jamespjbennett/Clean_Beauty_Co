@@ -304,10 +304,33 @@ body{
   width: 100%!important;
 }
 
+.blog-entry-mobile-home{
+  display:none;
+}
+
 @media(max-width: 900px){
 
   .blog-header{
-    left: 23%;
+    left: 11%;
+    background-color: rgba(130, 129, 129, 0.61);
+  }
+
+  .blog-header h3{
+    font-size: 5vw;
+    left: 11%;
+    margin-top:10%;
+  }
+
+  .blog-products-seaparator-container{
+    display:none;
+  }
+  .blog-image-container{
+    display:none;
+  }
+  .blog-entry-mobile-home{
+    display:block;
+    height: 100%;
+    background: url(image_path('new_blog-home-page-new-mobile.jpg')) no-repeat 52%;
   }
 }
 

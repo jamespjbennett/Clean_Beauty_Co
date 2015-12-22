@@ -26,7 +26,7 @@
 
    <div class="feature-images-links ">
      <div class="col-xs-0 col-xl-2"></div>
-     <div class="products-feature col-xs-12 col-xl-2">
+     <div class="products-feature col-xs-12 col-sm-3 col-xl-2">
        <div class="product-image">
          <%=link_to(image_tag('products-home-image-1.jpg'), products_path) %>
        </div> 
@@ -34,7 +34,7 @@
 
   <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor animi, minus. Corrupti praesentium debitis sint iure officia error veniam nihil fuga exercitationem. Similique earum, a ipsum. Hic atque in at.</p> -->
      </div>
-     <div class="recipes-feature col-xs-12 col-xl-2">
+     <div class="recipes-feature col-xs-12 col-sm-3 col-xl-2">
        <div class="product-image">
          <%=link_to(image_tag('recipes-home-image-1.jpg'), recipes_path) %> 
        </div>
@@ -43,7 +43,7 @@
       <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt molestias nulla, consequatur culpa dolorum nihil aliquam quasi quaerat quas eos porro earum rem fugiat in adipisci esse doloribus ipsam, reprehenderit.</p> -->
 
      </div>
-     <div class="ingredients-feature col-xs-12 col-xl-2">
+     <div class="ingredients-feature col-xs-12 col-sm-3 col-xl-2">
        <div class="product-image">
          <%=link_to(image_tag('ingredients-home-image-1.jpg'), ingredients_path) %>
        </div>
@@ -52,7 +52,7 @@
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
      </div>
 
-     <div class="placeholder-feature col-xs-12 col-xl-2">
+     <div class="placeholder-feature col-xs-12 col-sm-3 col-xl-2">
        <div class="product-image">
          <%=link_to(image_tag('flower-1.png'), root_path) %>
        </div>
@@ -60,9 +60,15 @@
 
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
      </div>
+
+     <div class="blog-entry-mobile-home col-xs-12 col-sm-3 col-xl-2">
+        <div class="blog-header">
+          <h3><%=link_to('Clean Beauty Co Blog', blog_entries_path) %></h3>
+      </div>
+     </div>
+
      <div class="col-xs-0 col-xl-2"></div>
 </div>
-p
   <div class="blog-products-seaparator-container" data-parallax="scroll" data-image-src="<%= image_url 'homepae-another-image.jpg' %>" data-speed="0.4">
   </div>
 
