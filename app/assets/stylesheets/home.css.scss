@@ -296,6 +296,10 @@ body{
 
 }
 
+.home-logo-mobile{
+  dispay:none;
+}
+
 .social-image img{
   margin-left: 28%;
 }
@@ -352,6 +356,23 @@ body{
   }
   .navbar-default .navbar-nav > li > a{
     text-align:left!important;
+    padding: 27px;
+    font-size: 28px;
+  }
+  .home-logo-mobile{
+    display: block;
+    position: absolute;
+    top: -5px;
+    z-index: 1000000000;
+  }
+
+  .home-logo{
+    display:none;
+  }
+
+  .home-logo-mobile a img{
+    width: 85px;
+    position: absolute;
   }
 }
 
