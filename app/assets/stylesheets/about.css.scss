@@ -116,18 +116,39 @@
 @media(max-width: 900px){
   .about-image-container > img{
     width: 100%;
+    max-height: 200px;
   }
   .about-us-header{
-    font-size:20px;
+    font-size: 3vw;
+  }
+  .about-intro-container{
+    margin-top: 18.5%;
   }
   .about-content{
-    font-size:17px;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
   }
   .about-us-header, .second-about{
     padding-top:0!important;
   }
   .about-intro-container .about-us-header{
-    padding-top:39px!important;
+    padding-top:0px!important;
+  }
+  .about-who-we-are-container{
+    min-height: 270px !important;
+    height: auto!important;
+}
+  .about-disclaimer-container{
+    min-height:272px;
+  }
+  .about-why-we-do-container{
+    min-height: 423px;
+    height: auto!important;
+  }
+  .about-intro-container{
+    min-height: 201px !important;
+    height: auto!important;
   }
 
 }

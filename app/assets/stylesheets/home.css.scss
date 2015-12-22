@@ -99,9 +99,8 @@ body{
 
 .header-taglines {
   position: absolute;
-  // left: 9%;
-  top: 60%;
-  width:100%;
+  top: 46%;
+  width: 100%;
   text-align: center;
 }
 .header-taglines h1{
@@ -315,8 +314,9 @@ body{
 @media(max-width: 900px){
 
   .blog-header{
-    left: 11%;
+    position: static;
     background-color: rgba(130, 129, 129, 0.61);
+    margin-top: 122px;
   }
 
   .blog-header h3{
@@ -346,6 +346,13 @@ body{
   .header-taglines h1{
     width: 84%;
     margin: 0 auto;
+    font-size: 20px;
+  }
+  .header-logo-container img{
+    width: 123%;
+    /* min-width: 200px; */
+    top: 114px;
+    margin-left: -26%;
   }
 
   .navbar-collapse .nav{
@@ -356,6 +363,9 @@ body{
   .navbar-collapse .nav li{
     width: 94%;
   }
+  .main-header-image{
+    height: 350px;
+  }
   .navbar-default .navbar-nav > li > a{
     text-align:left!important;
     padding: 27px;
@@ -363,7 +373,7 @@ body{
   }
   .home-logo-mobile{
     display: block;
-    position: absolute;
+    position: fixed;
     top: -5px;
     z-index: 1000000000;
   }
