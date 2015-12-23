@@ -19,8 +19,9 @@
 }
 
 .about-image-container > img{
-    width: 50%;
+    width: 100%;
     vertical-align: bottom;
+    max-width: 308px;
 }
 
 .about-intro-container{
@@ -149,6 +150,9 @@
   .about-intro-container{
     min-height: 201px !important;
     height: auto!important;
+  }
+  .about-image-container > img{
+    width: 50%;
   }
 
 }
