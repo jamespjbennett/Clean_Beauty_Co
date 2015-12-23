@@ -116,8 +116,8 @@
 
 @media(max-width: 900px){
   .about-image-container > img{
-    width: 100%;
-    max-height: 200px;
+    width: 84%;
+    max-width: 190px;
   }
   .about-us-header{
     font-size: 3vw;
@@ -151,8 +151,6 @@
     min-height: 201px !important;
     height: auto!important;
   }
-  .about-image-container > img{
-    width: 50%;
-  }
+
 
 }
