@@ -131,7 +131,8 @@ body{
   background: white;
   box-sizing: border-box;
   border: 1px solid black;
-  margin: 14px;
+  margin: 54px;
+  height: 235px;
 }
 
 .cbco-manifesto img{
@@ -177,6 +178,8 @@ body{
   height: 72%;
   width: 100%;
   overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .recipes-dropdown{
@@ -208,14 +211,14 @@ body{
 }
 
 .feature-images-links{
-  height: 454px;
+  height: 557px;
   background: white;
   // border-top: 15px solid #AFAFAF;
   // border-bottom: 15px solid #AFAFAF;
 }
 .recipes-feature, .products-feature, .ingredients-feature, .placeholder-feature{
-  margin-top: 60px;
   height: 100%;
+  display: table;
 }
 .nav-logo{
   width: 132px;
@@ -324,6 +327,7 @@ body{
 
 .snapwidget-widget{
   width: 100%!important;
+  margin-top:100px;
 }
 
 .blog-entry-mobile-home{
