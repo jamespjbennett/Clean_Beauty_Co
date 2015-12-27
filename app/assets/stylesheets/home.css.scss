@@ -9,9 +9,13 @@
 }
 
 .main-header-image{
-  height: 1000px;
+  height: 900px;
   // margin-top:100px;
 
+}
+
+.main-header-image img{
+  width: 100%!important;
 }
 
 
@@ -42,9 +46,9 @@
 
 
 
-// .parallax-mirror img{
-//   opacity: 0.5!important;
-// }
+.parallax-mirror img{
+  width:100%!important;
+}
 
 // .blog-image-container.parallax-mirror img{
 //   opacity: 1!important;
@@ -123,7 +127,15 @@ body{
   height: 71px!important;
 }
 .cbco-manifesto{
-  text-align:center;
+  text-align: center;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 14px;
+}
+
+.cbco-manifesto img{
+  width: 77%;
 }
 
 .nav-header-width{
