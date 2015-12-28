@@ -210,6 +210,13 @@ $(document).ready(function(){
     $(this).animate({opacity:1}, 50);
   });
 
+  $('.indiv_press_entry img').hover(function(){
+    $(this).animate({opacity: 0.5}, 50)
+  })
+  $('.indiv_press_entry img').mouseleave(function(){
+    $(this).animate({opacity:1}, 50);
+  });
+
   $('.preview-image-container img').hover(function(){
     $(this).animate({opacity: 0.5}, 50)
   })
