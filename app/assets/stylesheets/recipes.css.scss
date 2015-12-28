@@ -31,8 +31,11 @@
 	padding-bottom: 83px;
     border-bottom: 1px dotted grey;
 }
+.helpful-hint-container{
+  padding-left: 2%;
+}
 
-.recipe-show-container h2{
+.recipe-show-container h2, .hint-header{
 	font-weight: 100;
     letter-spacing: 2px;
     margin-bottom: 25px;
@@ -48,7 +51,7 @@
 
 }
 
-.left-column-recipe p{
+.left-column-recipe p, .helpful-hint{
 	font-weight: 100;
     font-family: "Helvetica Neue";
     font-size: 20px;

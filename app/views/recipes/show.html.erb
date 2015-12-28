@@ -23,7 +23,11 @@
 				<p class="recipe-list"><%= ingredient %> </p>
 			<% end %>
 	</div>
-	<p class="shop-link">I AM ALSO AVAILABLE TO BUY READY MADE ON <a href="http://clean-beauty-co.myshopify.com/">OUR SHOP</a>  </p>
+	<div class="helpful-hint-container">
+		<h3 class="hint-header">Helpful Hint:</h3>
+		<p class="helpful-hint"><%= @recipe.helpful_hint %></p>
+		<p class="shop-link">I AM ALSO AVAILABLE TO BUY READY MADE ON <a href="http://clean-beauty-co.myshopify.com/">OUR SHOP</a></p>
+	</div>
 </div>
 
 <div class="col-sm-1 col-lg-2"></div>
