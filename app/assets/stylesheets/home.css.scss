@@ -18,29 +18,32 @@
   width: 100%!important;
 }
 
+a:hover{
+  cursor: default;
+}
 
 
 .strawb-cursor{
-  cursor:url(image_path('strawb-cursor.png')), auto;
+  cursor:url(image_path('strawb-cursor.png')), auto!important!important;
 }
 
 .star-cursor{
-  cursor:url(image_path('star-cursor.png')), auto;
+  cursor:url(image_path('star-cursor.png')), auto!important;
 }
 .cloud-cursor{
-  cursor:url(image_path('cloud-cursor.png')), auto;
+  cursor:url(image_path('cloud-cursor.png')), auto!important;
 }
 
 .mushroom-cursor{
-  cursor:url(image_path('mushroom-cursor.png')), auto;
+  cursor:url(image_path('mushroom-cursor.png')), auto!important;
 }
 
 .carrot-cursor{
-  cursor:url(image_path('carrot-cursor.png')), auto;
+  cursor:url(image_path('carrot-cursor.png')), auto!important;
 }
 
 .apple-cursor{
-  cursor:url(image_path('apple-cursor.png')), auto;
+  cursor:url(image_path('apple-cursor.png')), auto!important;
 }
 
 
