@@ -25,10 +25,10 @@
 }
 
 .about-intro-container{
-  height: 312px!important;
+  height: 550px!important;
 }
 .about-why-we-do-container{
-  height: 505px;
+  height: 361px;
 }
 .col-left{
   padding-left: 0!important;
@@ -46,17 +46,31 @@
 
 .about-content{
   font-family: Helvetica Neue;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 21px;
-  line-height: 120%;
-  width: 80%;
+  line-height: 153%;
+  width: 50%;
   text-align: justify;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.about-images{
+  width: 60%;
   margin: 0 auto;
 }
 
-.about-intro-container, .about-why-we-do-container{
-  background: #c9c6d9; 
+.about-images img:nth-of-type(1){
+  width: 36%;
 }
+.about-images img:nth-of-type(2){
+  width: 63%;
+}
+
+.about-content-first{
+  margin-top: 100px;
+  font-weight: 200!important;
+}
+
 
 .about-left{
   margin-right: auto;
@@ -72,11 +86,12 @@
 }
 
 .second-about{
-  padding-top: 20px!important;
+  padding-top: 140px!important;
 }
 
 .about-intro-container .about-us-header{
-  padding-top: 7%;
+  padding-top: 3%;
+  padding-bottom:3%;
 }
 
 .about-right{
@@ -112,6 +127,7 @@
 
 .about-why-we-do-container{
   margin-bottom: 0;
+  margin-top: 92px;
 }
 
 @media(max-width: 900px){
