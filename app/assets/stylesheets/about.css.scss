@@ -140,11 +140,13 @@
   }
   .about-intro-container{
     margin-top: 18.5%;
+    height: auto!important;
+    margin-bottom:50px;
   }
   .about-content{
     font-size: 15px;
     font-weight: 100;
-    width: 100%;
+    width: 90%;
   }
   .about-us-header, .second-about{
     padding-top:0!important;
@@ -153,19 +155,18 @@
     padding-top:0px!important;
   }
   .about-who-we-are-container{
-    min-height: 270px !important;
-    height: auto!important;
-}
-  .about-disclaimer-container{
-    min-height:272px;
+    height: 92px;
   }
   .about-why-we-do-container{
-    min-height: 423px;
-    height: auto!important;
+    height: 240px;
+    margin-top: -118px;
   }
-  .about-intro-container{
-    min-height: 201px !important;
-    height: auto!important;
+  .about-disclaimer-container{
+    height: 233px;
+  }
+
+  .about-images{
+    width: 90%;
   }
 
 
