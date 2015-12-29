@@ -10,9 +10,9 @@
     </div>
     <div class="last_3_recipes col-xs-12">
       <% @last_skin_food_recipes.each do |recipe| %>
-        <div class="col-xs-6 col-sm-4">
+        <div class="col-xs-6 col-sm-4 recipe-index-image">
           <%=image_tag(recipe.image) %>
-          <p><%=recipe.title%></p>
+          <p class="recipe-index-title"><%=link_to(recipe.title, recipe_path(recipe))%></p>
         </div>
       <% end %> 
     </div>
