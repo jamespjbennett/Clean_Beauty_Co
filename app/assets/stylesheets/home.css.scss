@@ -353,9 +353,7 @@ position: static;
     text-align: center;
   }
 
-  .blog-products-seaparator-container{
-    display:none;
-  }
+
   .blog-image-container{
     display:none;
   }
@@ -377,6 +375,10 @@ position: static;
   .featured-blog-entry-container{
     padding: 0px!important;
   }
+  .feature-images-links{
+    height: 412px;
+    margin-top: 42px;
+  }
 
   .social-image img{
     margin-left: 0;
@@ -388,15 +390,14 @@ position: static;
   }
 
   .header-taglines h1{
-    width: 84%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 17px;
   }
   .header-logo-container img{
     width: 123%;
     /* min-width: 200px; */
-    top: 114px;
-    margin-left: -26%;
+    top: 80px;
   }
 
   .navbar-collapse .nav{
@@ -411,7 +412,7 @@ position: static;
     font-size: 30px;
   }
   .main-header-image{
-    height: 350px;
+    height: 495px;
   }
   .navbar-default .navbar-nav > li > a{
     text-align: left !important;
@@ -460,6 +461,19 @@ position: static;
   }
   .product-image{
     height: auto;
+  }
+  .header-taglines{
+    top: 159px;
+  }
+  .cbco-manifesto{
+    height: 72px;
+    margin: 19px;
+  }
+  .cbco-manifesto img{
+    width: 100%;
+  }
+  .pineapple-image{
+    height: 306px;
   }
 }
 
