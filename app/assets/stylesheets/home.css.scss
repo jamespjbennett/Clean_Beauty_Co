@@ -388,6 +388,12 @@ position: static;
     margin-top:100px;
     margin-bottom: 31px;
   }
+  .mobile-logo-container{
+    text-align: center;
+  }
+  .blog-products-seaparator-container{
+    display:none;
+  }
 
   .header-taglines h1{
     width: 100%;
@@ -395,9 +401,10 @@ position: static;
     font-size: 17px;
   }
   .header-logo-container img{
-    width: 123%;
+    width: 130px!important;
     /* min-width: 200px; */
     top: 80px;
+    margin-left: -73px;
   }
 
   .navbar-collapse .nav{
@@ -466,7 +473,7 @@ position: static;
     top: 159px;
   }
   .cbco-manifesto{
-    height: 72px;
+    height: auto;
     margin: 19px;
   }
   .cbco-manifesto img{
