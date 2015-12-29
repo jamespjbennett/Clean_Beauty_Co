@@ -1,0 +1,12 @@
+<div class="diy-recipes-container">
+	<h1>Skin Food Recipes</h1>
+	<%@skin_food_recipes.each do |recipe| %>
+		<a href='/recipes/<%=recipe.id %>'>
+			<div class="indiv-recipe  col-xs-6 col-sm-4">
+				<%=image_tag(recipe.image) %>
+				<h3><%= recipe.title %></h3>
+			</div>
+		</a>
+		
+	<% end%>
+</div>

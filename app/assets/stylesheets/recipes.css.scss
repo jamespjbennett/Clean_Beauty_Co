@@ -12,6 +12,7 @@
 	font-size: 15px;
     letter-spacing: 2px;
     font-family: 'Helvetica Neue';
+    font-weight: 200;
 }
 .indiv-recipe{
 	margin-bottom: 42px;
@@ -26,7 +27,8 @@
 }
 .all-recipes-container{
   margin-top: 136px;
-  margin-left: 40px;
+  width: 90%;
+  margin: 0 auto;
 }
 .all-recipes-container h1, .skin-food-container h2{
   font-weight: 100;
@@ -43,6 +45,10 @@
   padding-left:0;
 }
 
+.diy-beauty-container{
+  margin-top: 33%!important;
+}
+ 
 .recipe-index-image{
   padding-left:0;
 }
@@ -62,6 +68,7 @@
   border-bottom: 1px solid black;
   padding-bottom: 2px;
   font-size: 31px;
+  margin-top:100px;
 }
 
 .recipe-show-container{
@@ -72,6 +79,13 @@
 }
 .helpful-hint-container{
   padding-left: 2%;
+}
+
+.all-recipes-link{
+  font-family: helvetica neue;
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 .recipe-show-container h2, .hint-header{

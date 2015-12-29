@@ -67,6 +67,10 @@ class RecipesController < ApplicationController
     @diy_recipes = Recipe.where('category=0')
   end
 
+  def skin_food
+    @skin_food_recipes = Recipe.where('category=1')
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recipe
