@@ -1,25 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Recipes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Recipe', new_recipe_path %>
+<div class="all-recipes-container">
+  <h1>RECIPES</h1>
+  <div class="skin-food-container">
+    <h2>Skin Food</h2>
+    <div class="col-xs-6 col-sm-8">
+      <p>Great skin starts in the kitchen. We'll show you show.</p>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <%= link_to('View Skin Food Recipes >', "#") %>
+    </div>
+    <div class="last_3_recipes col-xs-12">
+      <% @last_skin_food_recipes.each do |recipe| %>
+        <div class="col-xs-6 col-sm-4">
+          <%=image_tag(recipe.image) %>
+          <p><%=recipe.title%></p>
+        </div>
+      <% end %> 
+    </div>
+  </div>
+<!--   <div class="diy-beauty-container">
+    <h2>DIY BEAUTY</h2>
+    <div class="col-xs-6 col-sm-8">
+      <p>Whipping up your own face serum is SO much easier than you think</p>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <%#= link_to('View DIY Beauty Recipes >', "#") %>
+    </div>
+  </div> -->
+</div>

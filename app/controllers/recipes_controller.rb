@@ -5,6 +5,8 @@ class RecipesController < ApplicationController
   # GET /recipes.json
   def index
     @recipes = Recipe.all
+    @last_skin_food_recipes = Recipe.all.where(category: 1).last(3)
+    @last_diy_beauty_recipes = Recipe.all.where(category: 0).last(3)
   end
 
   # GET /recipes/1
