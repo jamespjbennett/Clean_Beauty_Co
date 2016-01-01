@@ -504,4 +504,9 @@ Have fun everyone! And to finish, here are some super cute halloween dogs who wi
   image: "http://cleanbeautyco.com/wp-content/uploads/2015/10/8c8c8896de66b50c892cbc8e0764bd98-476x510.jpg"
 )
 
+User.delete_all
+
+User.create(email: "admin@cleanbeauty.com", password: "20//elsiedom15**", admin: true)
+
+
 
