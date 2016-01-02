@@ -21,6 +21,17 @@ RailsAdmin.config do |config|
   ## == PaperTrail ==
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
+  config.model BlogEntry do
+    edit do
+      # For RailsAdmin >= 0.5.0
+      field :content, :wysihtml5
+      # For RailsAdmin < 0.5.0
+      # field :description do
+      #   bootstrap_wysihtml5 true
+      # end
+    end
+  end
+
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
   # config.model BlogEntry do
   #   edit do
