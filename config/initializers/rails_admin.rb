@@ -22,7 +22,10 @@ RailsAdmin.config do |config|
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
   config.model BlogEntry do
-    edit do
+    edit do     
+      field :title
+      field :image
+      field :introduction_text
       # For RailsAdmin >= 0.5.0
       field :content, :wysihtml5
       # For RailsAdmin < 0.5.0
