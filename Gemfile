@@ -27,7 +27,6 @@ gem 'devise'
 gem 'rails_12factor', group: :production
 
 gem 'rails_admin', github: 'sferik/rails_admin'
-gem 'rich', github: 'bastiaanterhorst/rich'
 gem 'paperclip'
 gem 'mail_form', '~> 1.5.0.rc'
 gem 'simple_form', '~> 3.1.0.rc' 
@@ -38,7 +37,6 @@ gem "glebtv-simple_captcha"
 gem "mini_magick"
 gem 'rmagick'
 gem 'jquery-turbolinks'
-gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'commontator', '~> 4.10.0'
 
 # Use ActiveModel has_secure_password
