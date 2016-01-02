@@ -1,24 +1,4 @@
 GIT
-  remote: git://github.com/bastiaanterhorst/rich.git
-  revision: 85c32d029d3698ec871a65ebb992805b5e4f4ed4
-  specs:
-    rich (1.4.8)
-      jquery-rails
-      kaminari
-      mime-types
-      rack-raw-upload
-      rails (>= 3.2.0)
-      sass-rails
-
-GIT
-  remote: git://github.com/galetahub/ckeditor.git
-  revision: 0ebc23b5c512b1ceb6de58a2616cacf25ec5c2f6
-  specs:
-    ckeditor (4.1.5)
-      cocaine
-      orm_adapter (~> 0.5.0)
-
-GIT
   remote: git://github.com/sferik/rails_admin.git
   revision: 856153d081cc19678e51916df23f9764c33fb715
   specs:
@@ -161,8 +141,6 @@ GEM
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
       rack (~> 1.1)
-    rack-raw-upload (1.1.1)
-      multi_json
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -250,7 +228,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  ckeditor!
   coffee-rails (~> 4.1.0)
   commontator (~> 4.10.0)
   devise
@@ -267,7 +244,6 @@ DEPENDENCIES
   rails (= 4.2.1)
   rails_12factor
   rails_admin!
-  rich!
   rmagick
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
