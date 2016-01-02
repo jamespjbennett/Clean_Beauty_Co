@@ -39,7 +39,5 @@ module CleanBeautyCoApp
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')  
-    config.assets.precompile << 'rich/editor.css' 
-    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end

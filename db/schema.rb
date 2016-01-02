@@ -26,22 +26,6 @@ ActiveRecord::Schema.define(version: 20151223134237) do
     t.text     "introduction_text"
   end
 
-  create_table "ckeditor_assets", force: :cascade do |t|
-    t.string   "data_file_name",               null: false
-    t.string   "data_content_type"
-    t.integer  "data_file_size"
-    t.integer  "assetable_id"
-    t.string   "assetable_type",    limit: 30
-    t.string   "type",              limit: 30
-    t.integer  "width"
-    t.integer  "height"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-  end
-
-  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
-  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
-
   create_table "commontator_comments", force: :cascade do |t|
     t.string   "creator_type"
     t.integer  "creator_id"
@@ -118,19 +102,6 @@ ActiveRecord::Schema.define(version: 20151223134237) do
     t.string   "helpful_hint"
     t.string   "image"
     t.text     "description"
-  end
-
-  create_table "rich_rich_files", force: :cascade do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "rich_file_file_name"
-    t.string   "rich_file_content_type"
-    t.integer  "rich_file_file_size"
-    t.datetime "rich_file_updated_at"
-    t.string   "owner_type"
-    t.integer  "owner_id"
-    t.text     "uri_cache"
-    t.string   "simplified_type",        default: "file"
   end
 
   create_table "simple_captcha_data", force: :cascade do |t|
