@@ -46,7 +46,7 @@
 }
 
 .diy-beauty-container{
-  margin-top: 33%!important;
+  margin-top: 347px !important;
 }
  
 .recipe-index-image{
@@ -54,10 +54,14 @@
 }
 .recipe-index-image img{
   width: 70%;
+  max-height: 175px;
 }
 
+
+
 .recipe-index-title{
-  margin-left: 0!important
+  margin-left: 0!important;
+  margin-top:10px;
 }
 
 .skin-food-container p{
@@ -174,8 +178,18 @@ ol {
   .indiv-recipe{
     height: 180px;
   }
+  .recipe-link{
+    margin-left: -4%;
+  }
+
+  .diy-beauty-container {
+    margin-top: 405px !important;
+  }
   .recipe-image{
   	text-align:center;
+  }
+  .recipe-index-image img{
+    max-height: 72px;
   }
   .recipe-image img{
   	float:none;

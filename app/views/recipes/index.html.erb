@@ -2,11 +2,11 @@
   <h1>RECIPES</h1>
   <div class="skin-food-container">
     <h2>Skin Food</h2>
-    <div class="col-xs-6 col-sm-8">
+    <div class="col-xs-12 col-sm-8">
       <p>Great skin starts in the kitchen. We'll show you show.</p>
     </div>
-    <div class="col-xs-6 col-sm-4">
-      <%= link_to('View Skin Food Recipes >', "#") %>
+    <div class="col-xs-12 col-sm-4 recipe-link">
+      <%= link_to('View Skin Food Recipes >', skin_food_path) %>
     </div>
     <div class="last_3_recipes col-xs-12">
       <% @last_skin_food_recipes.each do |recipe| %>
@@ -19,10 +19,10 @@
   </div>
   <div class="skin-food-container diy-beauty-container">
     <h2>DIY Beauty</h2>
-    <div class="col-xs-6 col-sm-8">
+    <div class="col-xs-12 col-sm-8">
       <p>Whipping up your own face serum is SO much easier than you think.</p>
     </div>
-    <div class="col-xs-6 col-sm-4">
+    <div class="col-xs-12 col-sm-4 recipe-link">
       <%= link_to('View DIY Beauty Recipes >', diy_beauty_path) %>
     </div>
     <div class="last_3_recipes col-xs-12">
