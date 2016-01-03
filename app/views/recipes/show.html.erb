@@ -37,7 +37,9 @@
 		<% else %>
 			<p class="all-recipes-link"><%=link_to('Back to all DIY beauty recipes', diy_beauty_path)%></p>
 		<% end %>
-		<p class="shop-link">I AM ALSO AVAILABLE TO BUY READY MADE ON <a href="http://clean-beauty-co.myshopify.com/">OUR SHOP</a></p>
+		<% if @recipe.available == true %>
+			<p class="shop-link">I AM ALSO AVAILABLE TO BUY READY MADE ON <a href="http://clean-beauty-co.myshopify.com/">OUR SHOP</a></p>
+		<% end %>
 	</div>
 </div>
 
