@@ -78,13 +78,18 @@
     border-bottom: 1px dotted grey;
 }
 .helpful-hint-container{
-  padding-left: 2%;
+  padding-left: 1.5%;
+  clear:both;
+  padding-top: 50px;
+}
+.helpful-hint{
+  margin-bottom: 50px;
 }
 
 .all-recipes-link{
   font-family: helvetica neue;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 30px;
 }
 
@@ -133,7 +138,8 @@ ol {
 
 .recipe-image img{
 	float: right;
-    margin-bottom: 43px;
+  margin-bottom: 43px;
+  width: 85%;
 
 }
 
@@ -145,15 +151,15 @@ ol {
 .shop-link{
 	float:left;
 	font-family: 'Helvetica Neue';
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 200;
-	margin-top: 43px;
+	margin-top: 10px;
 
 }
 
 .recipe-sharebox{
 	display:block;
-	margin-left: 48%;
+	float: right!important;
 }
 
 @media(max-width: 900px){

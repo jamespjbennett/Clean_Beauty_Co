@@ -10,22 +10,28 @@
 	</div>
 	<p class="border-dotted col-xs-12"></p>
 	<div class="col-sm-7 left-column-recipe">
-		<h2>How To:</h2>
-		<ol>
-			<% @recipe.how_to.each do |how_to|%>
-				<li><p class="recipe-list"><%= how_to %> </p></li>
-			<% end %>
-		</ol>
+		<% if @recipe.how_to.any? %>
+			<h2>How To:</h2>
+			<ol>
+				<% @recipe.how_to.each do |how_to|%>
+					<li><p class="recipe-list"><%= how_to %> </p></li>
+				<% end %>
+			</ol>
+		<% end %>
 	</div>
-	<div class="col-sm-5 right-column-recipe ingredients-column">
-		<h2>Ingredients:</h2>
+	<% if @recipe.ingredients.any? %>
+		<div class="col-sm-5 right-column-recipe ingredients-column">
+			<h2>Ingredients:</h2>
 			<% @recipe.ingredients.each do |ingredient|%>
 				<p class="recipe-list"><%= ingredient %> </p>
 			<% end %>
-	</div>
+		</div>
+	<% end %>
 	<div class="helpful-hint-container">
-		<h3 class="hint-header">Helpful Hint:</h3>
-		<p class="helpful-hint"><%= @recipe.helpful_hint %></p>
+		<% if @recipe.helpful_hint != "" %>
+			<h3 class="hint-header">Helpful Hint:</h3>
+			<p class="helpful-hint"><%= @recipe.helpful_hint %></p>
+		<% end %>
 		<%if @recipe.category = 'skin_food'%>
 			<p class="all-recipes-link"><%=link_to('Back to all skin food recipes', skin_food_path)%></p>
 		<% else %>
