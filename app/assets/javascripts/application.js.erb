@@ -53,6 +53,13 @@ function redirectToDIY(){
   window.location.pathname = "/diy_beauty"
 };
 
+function redirectToSkinFood(){
+  window.location.pathname = "/skin_food"
+};
+
+function redirectToAllRecipes(){
+  window.location.pathname = "/recipes"
+};
 
 $(document).ready(function(){
   console.log('hello');
@@ -203,6 +210,9 @@ $(document).ready(function(){
   $('.homepage-about-us span').hide();
   $('.read-more').on('click', toggleAboutUsContent);
   $('.diy-beauty-link').on('click', redirectToDIY);
+  $('.skin-food-link').on('click', redirectToSkinFood);
+  $('.all-recipes-link').on('click', redirectToAllRecipes);
+
   $('.product-image img').hover(function(){
     $(this).animate({opacity: 0.5}, 50)
   })
