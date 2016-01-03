@@ -17,6 +17,17 @@ GIT
       safe_yaml (~> 1.0)
       sass-rails (>= 4.0, < 6)
 
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 76f825a8b616fabf8bfba433ac3107e1b1a079ae
+  specs:
+    paperclip (4.3.1)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -132,12 +143,6 @@ GEM
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
-    paperclip (4.3.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (= 0.3.0)
     pg (0.18.4)
     rack (1.6.4)
     rack-pjax (0.8.0)
@@ -242,7 +247,7 @@ DEPENDENCIES
   jquery-turbolinks
   mail_form (~> 1.5.0.rc)
   mini_magick
-  paperclip
+  paperclip!
   pg
   rails (= 4.2.1)
   rails_12factor
