@@ -60,9 +60,14 @@ function redirectToSkinFood(){
 function redirectToAllRecipes(){
   window.location.pathname = "/recipes"
 };
+function redirectToShop(){
+  window.location = "http://clean-beauty-co.myshopify.com/";
+}
 
 $(document).ready(function(){
   console.log('hello');
+
+  $('.product-click-dropdown').on('click', redirectToShop);
   // HOMEPAGE FUNCTIONS ***************
   // if(window.location.pathname.split('/')[1] == "blog_entries"){
   //   if($('iframe').length <=3 ){

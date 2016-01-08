@@ -33,9 +33,9 @@
 			<p class="helpful-hint"><%= @recipe.helpful_hint %></p>
 		<% end %>
 		<%if @recipe.category = 'skin_food'%>
-			<p class="all-recipes-link"><%=link_to('Back to all skin food recipes', skin_food_path)%></p>
+			<button class="all-recipes-link btn btn-primary"><%=link_to('Back to all skin food recipes', skin_food_path)%></button>
 		<% else %>
-			<p class="all-recipes-link"><%=link_to('Back to all DIY beauty recipes', diy_beauty_path)%></p>
+			<button class="all-recipes-link btn btn-primary"><%=link_to('Back to all DIY beauty recipes', diy_beauty_path)%></button>
 		<% end %>
 		<% if @recipe.available == true %>
 			<p class="shop-link">I AM ALSO AVAILABLE TO BUY READY MADE ON <a href="http://clean-beauty-co.myshopify.com/">OUR SHOP</a></p>
