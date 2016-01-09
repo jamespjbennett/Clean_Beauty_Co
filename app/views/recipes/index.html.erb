@@ -3,14 +3,14 @@
   <div class="skin-food-container">
     <h2>Skin Food</h2>
     <div class="col-xs-12 col-sm-8">
-      <p>Great skin starts in the kitchen. We'll show you show.</p>
+      <p class="recipe-index-description">Great skin starts in the kitchen. We'll show you show.</p>
     </div>
     <div class="col-xs-12 col-sm-4 recipe-link">
       <%= link_to('View Skin Food Recipes >', skin_food_path) %>
     </div>
     <div class="last_3_recipes col-xs-12">
       <% @last_skin_food_recipes.each do |recipe| %>
-        <div class="col-xs-6 col-sm-4 recipe-index-image">
+        <div class="col-xs-12 col-sm-4 recipe-index-image">
           <%=image_tag(recipe.image) %>
           <p class="recipe-index-title"><%=link_to(recipe.title, recipe_path(recipe))%></p>
         </div>
@@ -20,14 +20,14 @@
   <div class="skin-food-container diy-beauty-container">
     <h2>DIY Beauty</h2>
     <div class="col-xs-12 col-sm-8">
-      <p>Whipping up your own face serum is SO much easier than you think.</p>
+      <p class="recipe-index-description">Whipping up your own face serum is SO much easier than you think.</p>
     </div>
     <div class="col-xs-12 col-sm-4 recipe-link">
       <%= link_to('View DIY Beauty Recipes >', diy_beauty_path) %>
     </div>
     <div class="last_3_recipes col-xs-12">
       <% @last_diy_beauty_recipes.each do |recipe| %>
-        <div class="col-xs-6 col-sm-4 recipe-index-image">
+        <div class="col-xs-12 col-sm-4 recipe-index-image">
           <%=image_tag(recipe.image) %>
           <p class="recipe-index-title"><%=link_to(recipe.title, recipe_path(recipe))%></p>
         </div>

@@ -5,10 +5,10 @@
 	      <h3 class="workshops-title"> Workshops </h3>
 		  <h4 class="workshops-date"> New for 2016. </h4>
 	    </div>
-	    <div class="col-xs-12 col-sm-4 events-link">
-	      <%= link_to('View and Book >', "#") %>
-	    </div>
 	    <% @events.each do |event| %>
+		    <div class="col-xs-12 col-sm-4 events-link">
+		      <%= link_to('View and Book >', event.booking_link) %>
+		    </div>
 	    	<div class="event-show-container">
 	    		<div class="col-xs-12 col-sm-4 event-image">
 	    			<%= image_tag(event.image) %>	

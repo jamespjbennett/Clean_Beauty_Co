@@ -40,6 +40,7 @@ RailsAdmin.config do |config|
       field :title
       field :image
       field :description, :wysihtml5
+      field :booking_link
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true

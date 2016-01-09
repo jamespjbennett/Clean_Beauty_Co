@@ -188,8 +188,14 @@ ol {
   }
   .recipe-link{
     margin-left: -4%;
+    text-align: center;
   }
-
+  .recipe-link a{
+    text-align: center;
+  }
+  .recipe-index-description{
+    text-align:center;
+  }
   .diy-beauty-container {
     margin-top: 405px !important;
   }
@@ -199,8 +205,18 @@ ol {
   .recipe-index-image img{
     max-height: 72px;
   }
+  .recipe-index-image img{
+    width: 100%;
+    max-height: none!important;
+  }
+  .skin-food-container p{
+    margin-bottom: 34px;
+  }
   .recipe-image img{
   	float:none;
+  }
+  .skin-food-container h2{
+    text-align:center;
   }
   .recipe-sharebox{
   	margin-left: 0;
