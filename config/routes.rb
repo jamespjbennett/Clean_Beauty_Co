@@ -2,11 +2,13 @@ Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   mount Commontator::Engine => '/commontator'
+
   resources :ingredients
   resources :blog_entries
   resources :stockists
-  resources :recipes
-  match "/:slug", to: "recipes#show", via: 'get'
+  resources :recipes, :except => ['show']
+  # get  'recipes/:slug' => 'recipes#show'
+  get    'recipes/:slug' => 'recipes#show', :as => 'recipes_show'
   resources :products
   resources :homes
   resources :abouts
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
   match '/diy_beauty',     to: 'recipes#diy_beauty',  via: 'get'
   match '/skin_food',     to: 'recipes#skin_food',  via: 'get'
   resources "contacts", only: [:new, :create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,7 +1,7 @@
 <div class="diy-recipes-container">
 	<h1>DIY Beauty Recipes</h1>
 	<%@diy_recipes.each do |recipe| %>
-		<a href='/recipes/<%=recipe.id %>'>
+		<a href='/recipes/<%=recipe.slug %>'>
 			<div class="indiv-recipe  col-xs-6 col-sm-4">
 				<%=image_tag(recipe.image) %>
 				<h3><%= recipe.title %></h3>
