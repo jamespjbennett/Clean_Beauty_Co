@@ -35,6 +35,18 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Event do
+    edit do     
+      field :title
+      field :image
+      field :description, :wysihtml5
+      # For RailsAdmin < 0.5.0
+      # field :description do
+      #   bootstrap_wysihtml5 true
+      # end
+    end
+  end
+
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
   # config.model BlogEntry do
   #   edit do
