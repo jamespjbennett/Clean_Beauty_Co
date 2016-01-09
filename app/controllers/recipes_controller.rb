@@ -12,7 +12,8 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
-    @recipe = Recipe.friendly.find(params[:id])
+    # @recipe = Recipe.friendly.find(params[:id])
+    @recipe = Recipe.find_by_slug(params[:id])
   end
 
   # GET /recipes/new

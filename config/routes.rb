@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   resources :blog_entries
   resources :stockists
   resources :recipes
+  match "/:slug", to: "recipes#show", via: 'get'
   resources :products
   resources :homes
   resources :abouts
   match '/press', to: 'press#press', via: 'get'
+  match '/events', to: 'homes#events', via: 'get'
   root 'homes#index'
   match '/contacts',     to: 'contacts#new',  via: 'get'
   match '/diy_beauty',     to: 'recipes#diy_beauty',  via: 'get'

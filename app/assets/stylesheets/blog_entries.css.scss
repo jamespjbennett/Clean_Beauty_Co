@@ -73,6 +73,7 @@ h5.blog-placeholder{
 
 .blog-title{
   font-size: 36px;
+  font-weight: 100;
 }
 .feature-blog-image {
   width: 100%;
@@ -85,8 +86,8 @@ h5.blog-placeholder{
   height: 40px;
   background: transparent;
   margin-top: 19px;
-  border: 2px solid #c9c6d9;
-  color: #c9c6d9;
+  border: 2px solid black;
+  color: black;
 }
 
 .blog-read-more a{
@@ -257,10 +258,11 @@ h5.blog-placeholder{
 .featured-blog-entry-container p{
   text-align: left;
   font-family: "Helvetica Neue";
-  font-weight: 200;
+  font-weight: 100;
   font-size: 16px;
   line-height: 148%;
   letter-spacing: 1px;
+  text-align: justify;
 
 }
 
