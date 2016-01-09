@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   match '/contacts',     to: 'contacts#new',  via: 'get'
   match '/diy_beauty',     to: 'recipes#diy_beauty',  via: 'get'
   match '/skin_food',     to: 'recipes#skin_food',  via: 'get'
+  match '/shop',     to: 'homes#shop',  via: 'get'
   resources "contacts", only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -22,6 +22,47 @@ a:hover{
   cursor: default;
 }
 
+.info-container{
+  border: 1px solid black;
+  padding: 91px;
+  background: white;
+  margin: 0 auto;
+}
+
+.inside-info-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feature-header, .info-entry p{
+  font-family: Helvetica Neue;
+  font-size: 21px;
+}
+
+.info-entry{
+  display:inline-block;
+  width: 33%;
+  text-align:center;
+  vertical-align: top;
+}
+
+.feature-header{
+  width: 100%;
+}
+.feature-header-container hr{
+    width: 24%;
+    color: black;
+    background: grey;
+    height: 2px;
+    border: none;
+}
+
+.info-container-wrapper{
+  width: 100%;
+  background:white;
+  padding:29px;
+}
+
 
 .strawb-cursor{
   cursor:url(image_path('strawb-cursor2.png')), auto!important!important;
