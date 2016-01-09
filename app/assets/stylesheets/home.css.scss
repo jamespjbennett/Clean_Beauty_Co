@@ -41,9 +41,18 @@ a:hover{
 
 .info-entry{
   display:inline-block;
-  width: 33%;
+  width: 31%;
   text-align:center;
   vertical-align: top;
+}
+
+.diamond{
+  width: 2%;
+  display:inline-block;
+}
+
+.diamond img{
+  width: 100%;
 }
 
 .feature-header{
