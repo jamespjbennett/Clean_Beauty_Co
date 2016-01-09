@@ -24,26 +24,30 @@ a:hover{
 
 
 .strawb-cursor{
-  cursor:url(image_path('strawb-cursor.png')), auto!important!important;
+  cursor:url(image_path('strawb-cursor2.png')), auto!important!important;
 }
 
 .star-cursor{
-  cursor:url(image_path('star-cursor.png')), auto!important;
+  cursor:url(image_path('star-cursor2.png')), auto!important;
 }
 .cloud-cursor{
-  cursor:url(image_path('cloud-cursor.png')), auto!important;
+  cursor:url(image_path('cloud-cursor2.png')), auto!important;
 }
 
 .mushroom-cursor{
-  cursor:url(image_path('mushroom-cursor.png')), auto!important;
+  cursor:url(image_path('mushroom-cursor2.png')), auto!important;
 }
 
 .carrot-cursor{
-  cursor:url(image_path('carrot-cursor.png')), auto!important;
+  cursor:url(image_path('carrot-cursor2.png')), auto!important;
 }
 
 .apple-cursor{
-  cursor:url(image_path('apple-cursor.png')), auto!important;
+  cursor:url(image_path('apple-cursor1.png')), auto!important;
+}
+
+.plumb-cursor{
+  cursor:url(image_path('plumb-cursor1.png')), auto!important;
 }
 
 
@@ -327,12 +331,15 @@ body{
 
 .social-image img{
   margin-left: 28%;
-  width: 38%;
+  width: 80px;
+}
+
+.contact-submit-button{
+  background-color: black!important;
 }
 
 .snapwidget-widget{
   width: 100%!important;
-  margin-top:100px;
 }
 
 .blog-entry-mobile-home{

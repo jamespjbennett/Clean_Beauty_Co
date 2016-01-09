@@ -82,39 +82,43 @@ $(document).ready(function(){
   };
 
   $('a').hover(function(){
-    if(window.location.pathname == "/"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('a').mouseleave(function(){
-    if(window.location.pathname == "/"){
-      $(this).removeClass('cloud-cursor');
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
-      $(this).removeClass('apple-cursor');
+      $(this).addClass('apple-cursor');
     } else if(window.location.pathname == "/press"){
-      $(this).removeClass('cloud-cursor');
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/blog_entries"){
-      $(this).removeClass('star-cursor');
+      $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
-      $(this).removeClass('strawb-cursor');
+      $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
-      $(this).removeClass('carrot-cursor');
+      $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('button').hover(function(){
-    if(window.location.pathname == "/"){
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
       $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
       $(this).addClass('apple-cursor');
@@ -126,27 +130,31 @@ $(document).ready(function(){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('button').mouseleave(function(){
-    if(window.location.pathname == "/"){
-      $(this).removeClass('cloud-cursor');
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
-      $(this).removeClass('apple-cursor');
+      $(this).addClass('apple-cursor');
     } else if(window.location.pathname == "/press"){
-      $(this).removeClass('cloud-cursor');
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/blog_entries"){
-      $(this).removeClass('star-cursor');
+      $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
-      $(this).removeClass('strawb-cursor');
+      $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
-      $(this).removeClass('carrot-cursor');
+      $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('img').hover(function(){
-    if(window.location.pathname == "/"){
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
       $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
       $(this).addClass('apple-cursor');
@@ -158,27 +166,13 @@ $(document).ready(function(){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('img').mouseleave(function(){
-    if(window.location.pathname == "/"){
-      $(this).removeClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
-      $(this).removeClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
-      $(this).removeClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
-      $(this).removeClass('star-cursor');
-    } else if(window.location.pathname == "/contacts/new"){
-      $(this).removeClass('strawb-cursor');
-    } else if(window.location.pathname == "/diy_beauty"){
-      $(this).removeClass('carrot-cursor');
-    }
-  });
-
-    $('#atstbx a').hover(function(){
-    if(window.location.pathname == "/"){
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
       $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
       $(this).addClass('apple-cursor');
@@ -190,22 +184,44 @@ $(document).ready(function(){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
+    }
+  });
+
+    $('#atstbx a').hover(function(){
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+      $(this).addClass('cloud-cursor');
+    } else if(window.location.pathname == "/abouts"){
+      $(this).addClass('apple-cursor');
+    } else if(window.location.pathname == "/press"){
+      $(this).addClass('cloud-cursor');
+    } else if(window.location.pathname == "/blog_entries"){
+      $(this).addClass('star-cursor');
+    } else if(window.location.pathname == "/contacts/new"){
+      $(this).addClass('strawb-cursor');
+    } else if(window.location.pathname == "/diy_beauty"){
+      $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
   $('#atstbx a').mouseleave(function(){
-    if(window.location.pathname == "/"){
-      $(this).removeClass('cloud-cursor');
+    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/abouts"){
-      $(this).removeClass('apple-cursor');
+      $(this).addClass('apple-cursor');
     } else if(window.location.pathname == "/press"){
-      $(this).removeClass('cloud-cursor');
+      $(this).addClass('cloud-cursor');
     } else if(window.location.pathname == "/blog_entries"){
-      $(this).removeClass('star-cursor');
+      $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
-      $(this).removeClass('strawb-cursor');
+      $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
-      $(this).removeClass('carrot-cursor');
+      $(this).addClass('carrot-cursor');
+    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+      $(this).addClass('plumb-cursor');
     }
   });
 
