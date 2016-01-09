@@ -4,9 +4,14 @@
 	margin-top: 100px;
 }
 
-.events-title, .first-column h4, .first-column h3, first-column p, .second-column{
+.events-title, .first-column h4, .first-column h3, first-column p, .second-column h4, .second-column h3, second-column p, .second-column{
 	font-family: Helvetica Neue;
 	font-weight: 100;
+}
+
+.second-column{
+	clear:both;
+	padding-top: 34px;
 }
 
 .events-title{
@@ -15,11 +20,12 @@
 }
 
 .events-link a{
-	font-size: 25px;
+	font-size: 18px;
 }
 
 .events-link{
 	margin-top:25px;
+	text-align: right;
 }
 
 .event-image{
@@ -33,6 +39,7 @@
 	font-family: Helvetica Neue;
     font-size: 18px;
     letter-spacing: 1px;
+    line-height: 120%;
 
 }
 
@@ -41,5 +48,6 @@
 }
 
 .workshops-date{
-	font-size: 24px;
+	font-size: 18px;
+	margin-bottom: 20px;
 }
