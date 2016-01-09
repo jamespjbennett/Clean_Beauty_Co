@@ -84,7 +84,7 @@ $(document).ready(function(){
   $('a').hover(function(){
     if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
     } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
@@ -100,127 +100,127 @@ $(document).ready(function(){
   });
 
   $('a').mouseleave(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
   $('button').hover(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
   $('button').mouseleave(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
   $('img').hover(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
   $('img').mouseleave(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
     $('#atstbx a').hover(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
 
   $('#atstbx a').mouseleave(function(){
-    if(window.location.pathname == "/" || window.location.pathname == "/contacts"){
+    if(window.location.pathname == "/" || window.location.pathname.indexOf('contacts') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/abouts"){
+    } else if(window.location.pathname == "/abouts" || window.location.pathname == "/events"){
       $(this).addClass('apple-cursor');
-    } else if(window.location.pathname == "/press"){
+    } else if(window.location.pathname.indexOf('press') > -1){
       $(this).addClass('cloud-cursor');
-    } else if(window.location.pathname == "/blog_entries"){
+    } else if(window.location.pathname.indexOf('blog_entries') > -1){
       $(this).addClass('star-cursor');
     } else if(window.location.pathname == "/contacts/new"){
       $(this).addClass('strawb-cursor');
     } else if(window.location.pathname == "/diy_beauty"){
       $(this).addClass('carrot-cursor');
-    } else if(window.location.pathname == "/recipes" || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
+    } else if(window.location.pathname.indexOf('recipes') > -1 || window.location.pathname == "/diy_beauty" || window.location.pathname == "/skin_food"){
       $(this).addClass('plumb-cursor');
     }
   });
