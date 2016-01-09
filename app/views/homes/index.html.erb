@@ -64,21 +64,33 @@
 </div>
 
 <div class="homepage-content-container">
+  <p class="faves">OUR FAVES</p>
+  <hr>
 
    <div class="feature-images-links ">
      <div class="col-xs-0 col-xl-2"></div>
      <div class="products-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
-         <%=link_to(image_tag('products-home-image-2.jpg'), products_path) %>
-         <h2><%=link_to('PRODUCTS', products_path)%></h2>
+       <% if @featured_products.first.class == BlogEntry %>
+         <%=link_to(image_tag(@featured_products.first.image), blog_entries_path(@featured_products.first.id)) %>
+         <h2><%=link_to(@featured_products.first.title, blog_entries_path(@featured_products.first.id))%></h2>
+       <% else %>
+         <%=link_to(image_tag(@featured_products.first.image), recipes_show_path(@featured_products.first.slug)) %>
+         <h2><%=link_to(@featured_products.first.title, recipes_show_path(@featured_products.first.slug))%></h2>
+       <% end %>
        </div> 
 
   <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor animi, minus. Corrupti praesentium debitis sint iure officia error veniam nihil fuga exercitationem. Similique earum, a ipsum. Hic atque in at.</p> -->
      </div>
      <div class="recipes-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
-         <%=link_to(image_tag('recipes-home-image-2.jpg'), recipes_path) %> 
-         <h2><%=link_to('RECIPES', recipes_path)%></h2>
+       <% if @featured_products[1].class == BlogEntry %>
+         <%=link_to(image_tag(@featured_products[1].image), blog_entries_path(@featured_products[1].id)) %>
+         <h2><%=link_to(@featured_products[1].title, blog_entries_path(@featured_products[1].id))%></h2>
+       <% else %>
+         <%=link_to(image_tag(@featured_products[1].image), recipes_show_path(@featured_products[1].slug)) %>
+         <h2><%=link_to(@featured_products[1].title, recipes_show_path(@featured_products[1].slug))%></h2>
+       <% end %>
        </div>
 
       <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt molestias nulla, consequatur culpa dolorum nihil aliquam quasi quaerat quas eos porro earum rem fugiat in adipisci esse doloribus ipsam, reprehenderit.</p> -->
@@ -86,8 +98,13 @@
      </div>
      <div class="ingredients-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
-         <%=link_to(image_tag('ingredients-home-image-2.jpg'), ingredients_path) %>
-         <h2><%=link_to('INGREDIENTS', ingredients_path)%></h2>
+       <% if @featured_products[2].class == BlogEntry %>
+         <%=link_to(image_tag(@featured_products[2].image), blog_entries_path(@featured_products[2].id)) %>
+         <h2><%=link_to(@featured_products[2].title, blog_entries_path(@featured_products[2].id))%></h2>
+       <% else %>
+         <%=link_to(image_tag(@featured_products[2].image), recipes_show_path(@featured_products[2].slug)) %>
+         <h2><%=link_to(@featured_products[2].title, recipes_show_path(@featured_products[2].slug))%></h2>
+       <% end %>
        </div>
 
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
@@ -95,8 +112,13 @@
 
      <div class="placeholder-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
-         <%=link_to(image_tag('flower-2.png'), root_path) %>
-         <h2><%=link_to('EVENTS', root_path)%></h2>
+       <% if @featured_products[3].class == BlogEntry %>
+         <%=link_to(image_tag(@featured_products[3].image), blog_entries_path(@featured_products[3].id)) %>
+         <h2><%=link_to(@featured_products[3].title, blog_entries_path(@featured_products[3].id))%></h2>
+       <% else %>
+         <%=link_to(image_tag(@featured_products[3].image), recipes_show_path(@featured_products[3].slug)) %>
+         <h2><%=link_to(@featured_products[3].title, recipes_show_path(@featured_products[3].slug))%></h2>
+       <% end %>
        </div>
 
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->

@@ -14,6 +14,22 @@
 
 }
 
+.contact-thanks{
+  margin-top: 100px;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-weight: 100;
+}
+
+.contact-second{
+  margin-top: 36px;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 188px;
+}
+
 .main-header-image img{
   width: 100%!important;
 }
@@ -244,6 +260,22 @@ body{
   left: 5% !important;
 }
 
+.homepage-content-container hr{
+  width: 93px;
+  background: #AFAFAF;
+  color: white;
+  height: 1px;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.faves{
+  text-align:center;
+  font-size: 30px;
+  font-family: Helvetica neue;
+  padding-top: 20px;
+}
+
 .product-image img{
   width: 100%;
 }
@@ -255,6 +287,7 @@ body{
   padding: 3%;
   text-align: left;
   margin-left: -3%;
+  font-weight: 300;
 }
 
 .navbar-nav > li > .dropdown-menu li{
@@ -268,7 +301,7 @@ body{
 }
 
 .feature-images-links{
-  height: 557px;
+  height: 428px;
   background: white;
   // border-top: 15px solid #AFAFAF;
   // border-bottom: 15px solid #AFAFAF;
@@ -396,6 +429,21 @@ body{
   display:none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 900px){
 
   .blog-header{
@@ -410,6 +458,18 @@ position: static;
     left: 11%;
     margin-top: 5%;
     text-align: center;
+  }
+
+  .diamond{
+    display:none;
+  }
+
+  .info-entry{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .info-container{
+    padding: 29px;
   }
 
 

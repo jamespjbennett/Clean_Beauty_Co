@@ -81,8 +81,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  config.action_mailer.default_url_options = { :host => 'polar-stream-9416.herokuapp.com' }
-  Rails.application.routes.default_url_options[:host] = 'polar-stream-9416.herokuapp.com'
+  config.action_mailer.default_url_options = { :host => 'clean-beauty-co.herokuapp.com' }
+  Rails.application.routes.default_url_options[:host] = 'clean-beauty-co.herokuapp.com'
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -98,4 +98,6 @@ Rails.application.configure do
   user_name: ENV["GMAIL_USERNAME"],
   password: ENV["GMAIL_PASSWORD"]
   }
+
+  
 end

@@ -1,6 +1,9 @@
 class HomesController < ApplicationController
 
   def index
+  	@featured_products = []
+  	@featured_products << BlogEntry.where(featured:true) << Recipe.where(featured:true)
+  	@featured_products = @featured_products.flatten
   end
 
   def events

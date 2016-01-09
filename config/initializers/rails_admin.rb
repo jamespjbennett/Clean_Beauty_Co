@@ -28,6 +28,7 @@ RailsAdmin.config do |config|
       field :introduction_text
       # For RailsAdmin >= 0.5.0
       field :content, :wysihtml5
+      field :featured
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true
