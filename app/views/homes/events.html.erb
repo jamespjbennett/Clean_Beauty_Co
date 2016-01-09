@@ -1,1 +1,25 @@
-events
+<div class="events-container">
+	<h1 class="events-title"> EVENTS </h1>
+	<div class="first-column">
+		<div class="col-xs-12 col-sm-8">
+	      <h3 class="workshops-title"> Workshops </h3>
+		  <h4 class="workshops-date"> New for 2016. </h4>
+	    </div>
+	    <div class="col-xs-12 col-sm-4 events-link">
+	      <%= link_to('View and Book >', "#") %>
+	    </div>
+	    <% @events.each do |event| %>
+	    	<div class="event-show-container">
+	    		<div class="col-xs-12 col-sm-4 event-image">
+	    			<%= image_tag(event.image) %>	
+	    		</div>	
+	    		<div class="col-xs-12 col-sm-8 event-description">
+	    			<%= simple_format(event.description) %>	
+	    		</div>	
+	    	</div>
+	   	<% end %>
+	</div>
+	<div class="second-column">
+		
+	</div>
+</div>	
