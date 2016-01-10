@@ -563,20 +563,21 @@ position: static;
   }
 
 
-  .navbar-collapse .nav li{
-    width: 94%;
-  }
+
   .blog-title{
     font-size: 30px;
   }
   .main-header-image{
     height: 495px;
   }
+
   .navbar-default .navbar-nav > li > a{
-    text-align: left !important;
-    padding: 20px;
-    font-size: 19px;
+    padding: 11px;
+    font-size: 17px;
+    text-align: center !important;
   }
+
+
   .diy-recipes-container h1{
     margin-bottom: 65px!important;
     font-size: 30px!important;
@@ -638,18 +639,23 @@ position: static;
 }
 
 @media(max-width: 768px){
-    .navbar-collapse .nav{
+  .navbar-collapse .nav{
     background:white;
     border-left: 1px dotted #F1E8E8;
     border-bottom: 1px dotted #F1E8E8;
   }
-}
 
-@media(min-width: 768px){
-    .navbar-collapse .nav{
-      display:none;
+  .navbar-default .navbar-nav > li > a{
+    text-align: left !important;
+    padding: 20px;
+    font-size: 19px;
+  }
+
+  .nav-header-width{
+    width: 90%;
   }
 }
+
 
 
 
