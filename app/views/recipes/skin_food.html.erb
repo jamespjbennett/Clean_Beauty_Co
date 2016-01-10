@@ -19,7 +19,7 @@ just your kitchen essentials.
 	</p>
 	<div class="row">
 	<%@skin_food_recipes.each_with_index do |recipe, index| %>
-		<a href='/recipes/<%=recipe.id %>'>
+		<a href='/recipes/<%=recipe.slug %>'>
 			<div class="indiv-recipe  col-xs-6 col-sm-4">
 				<%=image_tag(recipe.image) %>
 				<h3><%= recipe.title %></h3>
