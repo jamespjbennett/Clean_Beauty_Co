@@ -41,6 +41,7 @@ gem 'commontator', '~> 4.10.0'
 gem 'bootstrap-wysihtml5-rails', '> 0.3.1.24'
 gem 'sprockets-rails', '2.3.3'
 gem 'friendly_id', '~> 5.1.0'
+gem "font-awesome-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

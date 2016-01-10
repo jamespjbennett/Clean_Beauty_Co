@@ -256,6 +256,7 @@ DEPENDENCIES
   commontator (~> 4.10.0)
   devise
   execjs
+  font-awesome-rails
   foreman
   friendly_id (~> 5.1.0)
   glebtv-simple_captcha

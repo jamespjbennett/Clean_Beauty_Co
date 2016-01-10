@@ -4,6 +4,7 @@ class HomesController < ApplicationController
   	@featured_products = []
   	@featured_products << BlogEntry.where(featured:true) << Recipe.where(featured:true)
   	@featured_products = @featured_products.flatten
+    @contact = Contact.new
   end
 
   def events

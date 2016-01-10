@@ -39,7 +39,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="home-logo">
-        <%=link_to(image_tag('homepage-logo4.png'), root_path) %>
+        <%=link_to(image_tag('new-clean-logo-newist.png'), root_path) %>
       </div>
       <ul class="nav navbar-nav">
 
@@ -66,27 +66,20 @@
 </nav>
 <%= yield %>
 <iframe src="http://snapwidget.com/sc/?u=Y2xlYW5iZWF1dHljb3xpbnwxNTB8NjB8MXx8bm98NXxmYWRlT3V0fG9uU3RhcnR8eWVzfHllcw==&ve=161115" title="Instagram Widget" class="snapwidget-widget inst-scroll" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:2000px; height:150px"></iframe>
-
-<div class="social-container">
-  <div class="social-icon col-xs-3">
-    <div class="social-image facebook">
-      <%=link_to(image_tag('facebook5.png'), "https://www.facebook.com/cleanbeautyco") %>
-    </div>
+<div class="footer-container">
+  <div class="social-container col-xs-12 col-sm-6">
+    <i class="fa fa fa-facebook"></i>
+    <i class="fa fa fa-instagram"></i>
+    <i class="fa fa fa-twitter"></i>
+    <i class="fa fa fa-pinterest"></i>
   </div>
-  <div class="social-icon col-xs-3">
-    <div class="social-image twitter">
-      <%=link_to(image_tag('twitter4.png'), "https://twitter.com/cleanbeautyco") %>
-    </div>
-  </div>
-  <div class="social-icon col-xs-3">
-    <div class="social-image insta">
-      <%= link_to(image_tag('instagram4.png'), "https://instagram.com/cleanbeautyco/") %>
-    </div>
-  </div>
-  <div class="social-icon col-xs-3">
-    <div class="social-image pint">
-      <%=link_to(image_tag('pinterest4.png'), "https://www.pinterest.com/cleanbeautyco/") %>
-    </div>
+  <div class="email-container col-xs-12 col-sm-6">
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal form-homepage' } do |f| %>
+      <%= f.input :email, :required => true, label_html: { class: 'homepage-email-input' } %>
+      <div class="form-actions">
+        <%= f.button :submit, 'Signup', :class=> "btn btn-primary contact-submit-button homepage-email-submit" %>
+      </div>
+    <% end %>
   </div>
 </div>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565b7c628efd1726" async="async"></script>
