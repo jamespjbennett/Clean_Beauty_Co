@@ -27,6 +27,14 @@
   margin-left:0!important;
 }
 
+.copyright{
+  clear: both;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  font-size: 15px;
+}
+
 .fa{
   font-size:37px!important;
   width: 20%!important;
@@ -297,7 +305,7 @@ body{
   text-align:center;
   font-size: 30px;
   font-family: Helvetica neue;
-  padding-top: 20px;
+  padding-top: 46px;
 }
 
 .product-image img{
@@ -422,10 +430,13 @@ body{
 }
 
 .social-container{
-  height:300px;
   background: white;
   margin-top:100px;
   
+}
+
+.email-container{
+  height: 225px;
 }
 
 .social-image{
