@@ -81,8 +81,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  config.action_mailer.default_url_options = { :host => 'http://clean-beauty-co.herokuapp.com/' }
-  Rails.application.routes.default_url_options[:host] = 'http://clean-beauty-co.herokuapp.com/'
+  config.action_mailer.default_url_options = { :host => 'clean-beauty-co.herokuapp.com' }
+  Rails.application.routes.default_url_options[:host] = 'clean-beauty-co.herokuapp.com'
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -96,8 +96,29 @@ Rails.application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"]
+  password: ENV["GMAIL_PASSWORD"],
+  openssl_verify_mode: 'none'
   }
+
+
+
+
+   #   config.action_mailer.default_url_options = { :host => 'secure.runagood.com' }
+   # config.action_mailer.delivery_method = :smtp
+   # config.action_mailer.smtp_settings = {
+   #   address: "hgl.default.purrdigital.uk0.bigv.io",
+   #   domain: "runagood.com",
+   #   authentication: "plain",
+   #   port: 587,
+   #   user_name: "donotreply@secure.runagood.com",
+   #   password: "r6DyWgFV",
+   #   enable_starttls_auto: true,  
+   #   openssl_verify_mode: 'none'
+   # }
+   # # change to false to prevent email from being sent during development
+   # config.action_mailer.perform_deliveries = true
+   # config.action_mailer.raise_delivery_errors = true
+   # config.action_mailer.default :charset => "utf-8"
 
   
 end
