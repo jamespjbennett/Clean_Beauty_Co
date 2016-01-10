@@ -1,6 +1,7 @@
 <div class="diy-recipes-container">
 	<h1>DIY Beauty Recipes</h1>
-	<%@diy_recipes.each do |recipe| %>
+	<div class="row">
+	<%@diy_recipes.each_with_index do |recipe, index| %>
 		<a href='/recipes/<%=recipe.slug %>'>
 			<div class="indiv-recipe  col-xs-6 col-sm-4">
 				<%=image_tag(recipe.image) %>
@@ -8,5 +9,18 @@
 			</div>
 		</a>
 		
-	<% end%>
+        <% if (index + 1) % 3 == 0 %>
+            </div>
+            <div class='row'>
+        <% end %>
+	<% end %>
+    </div>
+
+
+
+
+
+
 </div>
+
+
