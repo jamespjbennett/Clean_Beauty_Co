@@ -95,8 +95,8 @@ Rails.application.configure do
   domain: 'clean-beauty-co.herokuapp.com',
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"],
+  user_name: 'jamespjbennett@gmail.com',
+  password: '1xcovateingle',
   openssl_verify_mode: 'none'
   }
 
