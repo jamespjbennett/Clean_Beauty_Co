@@ -32,7 +32,7 @@
 			<h3 class="hint-header">Helpful Hint:</h3>
 			<p class="helpful-hint"><%= @recipe.helpful_hint %></p>
 		<% end %>
-		<%if @recipe.category = 'skin_food'%>
+		<%if @recipe.category == 'skin_food'%>
 			<button class="all-recipes-link btn btn-primary"><%=link_to('Back to all skin food recipes', skin_food_path)%></button>
 		<% else %>
 			<button class="all-recipes-link btn btn-primary"><%=link_to('Back to all DIY beauty recipes', diy_beauty_path)%></button>
