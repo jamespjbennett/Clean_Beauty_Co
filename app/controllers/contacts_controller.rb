@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     subject = params[:contact][:subject]
     message = params[:contact][:message]
+    EmailContact.create(email: params[:contact][:email])
     if !subject
       subject = "no subject"
     end
