@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
       subject = "no subject"
     end
     if !message
-      subject = "no message"
+      message = "no message"
     end
     ActionMailer::Base.mail(from: params[:contact][:email], to: "jamespjbennett@gmail.com", subject: params[:contact][:subject], body: params[:contact][:message]).deliver_now
     # @contact.request = request
