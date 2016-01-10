@@ -1,8 +1,8 @@
 class Contact < MailForm::Base
-  attribute :name,      :validate => true
+  attribute :name      
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
-  attribute :subject, :validate =>true
+  attribute :subject
   attribute :nickname,  :captcha  => true
 
   # Declare the e-mail headers. It accepts anything the mail method
