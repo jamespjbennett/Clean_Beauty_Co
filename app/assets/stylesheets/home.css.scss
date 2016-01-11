@@ -454,7 +454,12 @@ body{
 }
 
 .contact-submit-button{
-  background-color: black!important;
+  background-color: white !important;
+  color: black;
+  border: 2px solid black!important;
+  border-color: black!important;
+  border-radius: 0px;
+  
 }
 
 .snapwidget-widget{
