@@ -27,6 +27,70 @@
   margin-left:0!important;
 }
 
+.comment-content-user{
+  font-weight: 100!important;
+  font-family: Helvetica neue!important;
+
+}
+
+.comment-content-show{
+  font-weight: 200!important;
+  font-family: Helvetica neue!important;
+}
+
+.post-comment{
+  width: 98px;
+  height: 38px;
+  font-size: 20px;
+
+}
+.comments-container p, .comments-container h5, .comments-container h2{
+  font-weight: 100;
+}
+
+#blog_ccomment_content{
+  border: 1px solid #EAE6E6;
+  width: 328px;
+  outline-color: grey !important;
+}
+
+.all-comments{
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+#blog_ccomment_user{
+  outline-color: grey !important;
+}
+
+.new_blog_ccomment label{
+  font-weight: 100;
+  display:block;
+}
+
+.new-comment-title{
+  margin-bottom: 28px;
+}
+
+.all-comments-header{
+  margin-bottom:15px;
+}
+
+.comments-container input{
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #E2D9D9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.comments-container{
+  clear:both;
+  margin-left:5%;
+}
+
 .copyright{
   clear: both;
   text-align: center;
@@ -687,6 +751,8 @@ position: static;
   }
   .header-taglines{
     top: 159px;
+    width: 90%;
+    margin: 0 auto;
   }
   .cbco-manifesto{
     height: auto;
@@ -697,6 +763,20 @@ position: static;
   }
   .pineapple-image{
     height: 306px;
+  }
+  .comment-content-user{
+    text-align:center;
+  }
+
+  .comment-content-show{
+    text-align:center;
+  }
+
+  .comments-container{
+    margin-left:0;
+  }
+  .comments-container h2, .new-comment-title, .new_blog_ccomment, .new-comment-title, .all-comments-header, .comments-container h5{
+    text-align:center;
   }
 }
 

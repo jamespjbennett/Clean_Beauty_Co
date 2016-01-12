@@ -75,6 +75,7 @@
 
    <div class="feature-images-links ">
 
+     <div class="row homepage-row">
      <div class="col-xs-0 col-xl-2"></div>
      <div class="products-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
@@ -90,35 +91,41 @@
   <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor animi, minus. Corrupti praesentium debitis sint iure officia error veniam nihil fuga exercitationem. Similique earum, a ipsum. Hic atque in at.</p> -->
      </div>
 
+     
+       <div class="recipes-feature col-xs-6 col-sm-3 col-xl-2">
+         <div class="product-image">
+         <% if @featured_products[1].class == BlogEntry %>
+           <%=link_to(image_tag(@featured_products[1].image), blog_entries_path(@featured_products[1].id)) %>
+           <h2><%=link_to(@featured_products[1].title, blog_entries_path(@featured_products[1].id))%></h2>
+         <% else %>
+           <%=link_to(image_tag(@featured_products[1].image), recipes_show_path(@featured_products[1].slug)) %>
+           <h2><%=link_to(@featured_products[1].title, recipes_show_path(@featured_products[1].slug))%></h2>
+         <% end %>
+         </div>
 
-     <div class="recipes-feature col-xs-6 col-sm-3 col-xl-2">
-       <div class="product-image">
-       <% if @featured_products[1].class == BlogEntry %>
-         <%=link_to(image_tag(@featured_products[1].image), blog_entries_path(@featured_products[1].id)) %>
-         <h2><%=link_to(@featured_products[1].title, blog_entries_path(@featured_products[1].id))%></h2>
-       <% else %>
-         <%=link_to(image_tag(@featured_products[1].image), recipes_show_path(@featured_products[1].slug)) %>
-         <h2><%=link_to(@featured_products[1].title, recipes_show_path(@featured_products[1].slug))%></h2>
-       <% end %>
+        <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt molestias nulla, consequatur culpa dolorum nihil aliquam quasi quaerat quas eos porro earum rem fugiat in adipisci esse doloribus ipsam, reprehenderit.</p> -->
+
        </div>
+      </div>
 
-      <!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt molestias nulla, consequatur culpa dolorum nihil aliquam quasi quaerat quas eos porro earum rem fugiat in adipisci esse doloribus ipsam, reprehenderit.</p> -->
+      <div class="row homepage-row">
+       <div class="ingredients-feature col-xs-6 col-sm-3 col-xl-2">
+         <div class="product-image">
+         <% if @featured_products[2].class == BlogEntry %>
+           <%=link_to(image_tag(@featured_products[2].image), blog_entries_path(@featured_products[2].id)) %>
+           <h2><%=link_to(@featured_products[2].title, blog_entries_path(@featured_products[2].id))%></h2>
+         <% else %>
+           <%=link_to(image_tag(@featured_products[2].image), recipes_show_path(@featured_products[2].slug)) %>
+           <h2><%=link_to(@featured_products[2].title, recipes_show_path(@featured_products[2].slug))%></h2>
+         <% end %>
+         </div>
 
-     </div>
-     <div class="ingredients-feature col-xs-6 col-sm-3 col-xl-2">
-       <div class="product-image">
-       <% if @featured_products[2].class == BlogEntry %>
-         <%=link_to(image_tag(@featured_products[2].image), blog_entries_path(@featured_products[2].id)) %>
-         <h2><%=link_to(@featured_products[2].title, blog_entries_path(@featured_products[2].id))%></h2>
-       <% else %>
-         <%=link_to(image_tag(@featured_products[2].image), recipes_show_path(@featured_products[2].slug)) %>
-         <h2><%=link_to(@featured_products[2].title, recipes_show_path(@featured_products[2].slug))%></h2>
-       <% end %>
+       <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
        </div>
+     
 
-     <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
-     </div>
 
+     <div class="row homepage-row">
      <div class="placeholder-feature col-xs-6 col-sm-3 col-xl-2">
        <div class="product-image">
        <% if @featured_products[3].class == BlogEntry %>
@@ -133,6 +140,8 @@
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
      </div>
      <div class="col-xs-0 col-xl-2"></div>
+     </div>
+
      </div>
 </div>
 

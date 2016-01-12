@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :products
   resources :homes
   resources :abouts
+  resources :blog_ccomments
   match '/press', to: 'press#press', via: 'get'
   match '/events', to: 'homes#events', via: 'get'
   root 'homes#index'

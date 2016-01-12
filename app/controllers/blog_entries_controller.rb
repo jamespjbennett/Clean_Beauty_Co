@@ -17,6 +17,7 @@ class BlogEntriesController < ApplicationController
     @blog_entry = BlogEntry.find(params[:id])
     @blog_entries = BlogEntry.all.sort.reverse
     @latest_blog_entries = @blog_entries[0..3]
+    @blog_comment = BlogCcomment.new
   end
 
   # GET /blog_entries/new
