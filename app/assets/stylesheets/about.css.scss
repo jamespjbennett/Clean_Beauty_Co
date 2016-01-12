@@ -156,18 +156,26 @@
   .about-us-header, .second-about{
     padding-top:0!important;
   }
+
+  .about-who-we-are-container{
+    height: auto!important;
+  }
+
+  .footer-container{
+    margin-top:100px!important;
+  }
+  .about-images img:nth-of-type(1){
+    width: 90%;
+  }
   .about-intro-container .about-us-header{
     padding-top:0px!important;
   }
-  .about-who-we-are-container{
-    height: 92px;
-  }
+ 
   .about-why-we-do-container{
-    height: 240px;
-    margin-top: -118px;
+    height: auto;
   }
   .about-disclaimer-container{
-    height: 233px;
+    height: auto;
   }
 
   .about-images{
