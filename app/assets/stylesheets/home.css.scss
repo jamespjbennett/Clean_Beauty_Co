@@ -64,7 +64,10 @@
 #blog_ccomment_user{
   outline-color: grey !important;
 }
-
+.new_blog_ccomment .simple_captcha_label{
+   margin-bottom: 22px;
+   margin-top: -10px;
+}
 .new_blog_ccomment label{
   font-weight: 100;
   display:block;
@@ -77,13 +80,15 @@
 .all-comments-header{
   margin-bottom:15px;
 }
-
+.post-comment{
+  background: white;
+  border: 2px solid black!important;
+  font-weight: 200;
+}
 .comments-container input{
   margin-bottom: 20px;
-  border-bottom: 1px dotted #E2D9D9;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: 1px solid #EAE6E6;
+  outline-color: grey !important;
 }
 
 .comments-container{
@@ -780,6 +785,16 @@ position: static;
     width:auto!important;
   }
 
+
+}
+
+@media(max-width: 768px){
+  .navbar-collapse .nav{
+    background:white;
+    border-left: 1px dotted #F1E8E8;
+    border-bottom: 1px dotted #F1E8E8;
+  }
+
   .comment-content-show{
     text-align:center;
   }
@@ -789,14 +804,6 @@ position: static;
   }
   .comments-container h2, .new-comment-title, .new_blog_ccomment, .new-comment-title, .all-comments-header, .comments-container h5{
     text-align:center;
-  }
-}
-
-@media(max-width: 768px){
-  .navbar-collapse .nav{
-    background:white;
-    border-left: 1px dotted #F1E8E8;
-    border-bottom: 1px dotted #F1E8E8;
   }
 
   .navbar-default .navbar-nav > li > a{

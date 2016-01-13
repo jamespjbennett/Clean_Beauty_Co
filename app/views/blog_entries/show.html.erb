@@ -12,6 +12,43 @@
     <p class="introduction-blog-text"> <%= simple_format(@blog_entry.content) %></p>
     <div class="addthis_sharing_toolbox"></div>
   </div>
+  <div class="comments-container col-sm-8">
+    <h2> Comments </h2>
+    <div class="comment-container">
+    <div class="new-comment">
+    <h5 class="new-comment-title"></h5>
+      <%= form_for @blog_comment do |f| %>
+        <%= f.label :Content %>
+        <%= f.text_area :content %><br />
+        <%= f.label :Name %>
+        <%= f.text_field :user %><br />
+        <%= f.simple_captcha :label => "Enter numbers.." %>
+        <input type="hidden" id="signup_pass_confirm" name="signup[pass_confirm]" value="<%= @blog_entry.id %>" />
+        <%= f.submit :Post, {:class => 'post-comment'} %>
+      <% end %>
+    </div>
+    <h5 class="all-comments-header">All Comments on this article</h5>
+    <div class="all-comments">
+      <% @blog_entry.blog_ccomments.each do |comment| %>
+        <div class="comment_show">
+          <%if comment.user %>
+            <p class="comment-content-user"><%= comment.user %> on <%= comment.created_at.strftime("%m/%d/%y")%>:</p>
+          <% else %>
+            <p class="comment-content-user"> anon. on <%= comment.created_at.strftime("%d/%m/%y")%>:</p>
+          <% end %>
+            <p class="comment-content-show"><%= comment.content%></p>
+        </div>
+      <% end %>
+    </div>
+</div>
+  
+</div>
+
+
+
+
+
+
   <div class="all-preview-posts-container ">
     <% @blog_entries.each do |entry| %>
       <div class="preview-blog-post-container col-sm-4">
@@ -75,34 +112,5 @@
     <!-- <div class="col-sm-2"></div> -->
   </div>
 </div>
-<div class="comments-container col-sm-8">
-  <h2> Comments </h2>
-  <div class="comment-container">
-  <div class="new-comment">
-  <h5 class="new-comment-title">New Comment</h5>
-    <%= form_for @blog_comment do |f| %>
-      <%= f.label :Content %>
-      <%= f.text_area :content %><br />
-      <%= f.label :Name %>
-      <%= f.text_field :user %><br />
-      <input type="hidden" id="signup_pass_confirm" name="signup[pass_confirm]" value="<%= @blog_entry.id %>" />
-      <%= f.submit :Post, {:class => 'post-comment'} %>
-    <% end %>
-  </div>
-  <h5 class="all-comments-header">All Comments on this article</h5>
-  <div class="all-comments">
-    <% @blog_entry.blog_ccomments.each do |comment| %>
-      <div class="comment_show">
-        <%if comment.user %>
-          <p class="comment-content-user"><%= comment.user %> on <%= comment.created_at.strftime("%m/%d/%y")%>:</p>
-        <% else %>
-          <p class="comment-content-user"> anon. on <%= comment.created_at.strftime("%d/%m/%y")%>:</p>
-        <% end %>
-          <p class="comment-content-show"><%= comment.content%></p>
-      </div>
-    <% end %>
-  </div>
 
-  
-</div>
 
