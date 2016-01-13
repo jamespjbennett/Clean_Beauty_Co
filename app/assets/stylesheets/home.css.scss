@@ -251,6 +251,10 @@ body{
 .homepage-about-us{
   margin:0 auto;
 }
+
+.homepage-row{
+  display:none;
+}
 .homepage-about-us h1{
   text-align: center;
   word-spacing: 6px;
@@ -366,7 +370,7 @@ body{
   color: white;
   height: 1px;
   border: none;
-  margin-bottom: 0px;
+  margin-bottom: 41px;
 }
 
 .faves{
@@ -408,6 +412,9 @@ a:hover{
 .navbar-nav > li > .dropdown-menu li{
   height: 30px;
   margin-top:10px;
+}
+.desktop-row{
+  display:block;
 }
 
 .feature-images-links div h2 a{
@@ -609,6 +616,8 @@ position: static;
     display:none;
   }
 
+
+
   .info-entry{
     width: 100%;
     margin-bottom: 40px;
@@ -677,7 +686,7 @@ position: static;
   }
 
   .header-taglines h1{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     font-size: 17px;
   }
@@ -751,7 +760,6 @@ position: static;
   }
   .header-taglines{
     top: 159px;
-    width: 90%;
     margin: 0 auto;
   }
   .cbco-manifesto{
@@ -795,6 +803,14 @@ position: static;
     text-align: left !important;
     padding: 20px;
     font-size: 19px;
+  }
+
+  .homepage-row{
+    display:block;
+  }
+
+  .desktop-row{
+    display:none;
   }
 
   .nav-header-width{
