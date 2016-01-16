@@ -8,9 +8,10 @@ class Contact < MailForm::Base
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
+    binding.pry
     {
       :subject => "My Contact Form",
-      :to => "jamespjbennett@gmail.com",
+      :to => "info@cleanbeauty.com",
       :from => %("#{name}" <#{email}>)
     }
   end
