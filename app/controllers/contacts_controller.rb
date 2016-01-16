@@ -23,5 +23,12 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message.'
       render :new
     end
+    if params[:subscribe]
+      @first_message_text = "Thanks for subscribing!"
+      @second_message_text = "Keep your eyes peeled for Clean Beauty Co updates."
+    else
+      @first_message_text = "Thank you for your message."
+      @second_message_text = "We'll get back to you soon."
+    end
   end
 end

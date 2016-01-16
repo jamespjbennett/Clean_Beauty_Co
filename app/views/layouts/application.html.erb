@@ -76,6 +76,7 @@
   <div class="email-container col-xs-12 col-sm-6">
     <%= simple_form_for @contact, :html => {:class => 'form-horizontal form-homepage' } do |f| %>
       <%= f.input :email, :required => true, label_html: { class: 'homepage-email-input' } %>
+      <input class="hidden" name="subscribe">
       <div class="form-actions">
         <%= f.button :submit, 'Subscribe', :class=> "btn btn-primary contact-submit-button homepage-email-submit" %>
       </div>
