@@ -139,56 +139,7 @@
      <div class="col-xs-0 col-xl-2"></div>
      </div>
 
-     <div class="desktop-row">
-       <div class="products-feature col-xs-6 col-sm-3 col-xl-2">
-         <div class="product-image">
-         <% if @featured_products.first.class == BlogEntry %>
-           <%=link_to(image_tag(@featured_products.first.image), blog_entries_path(@featured_products.first.id)) %>
-           <h2><%=link_to(@featured_products.first.title, blog_entries_path(@featured_products.first.id))%></h2>
-         <% else %>
-           <%=link_to(image_tag(@featured_products.first.image), recipes_show_path(@featured_products.first.slug)) %>
-           <h2><%=link_to(@featured_products.first.title, recipes_show_path(@featured_products.first.slug))%></h2>
-         <% end %>
-         </div> 
-
-       </div>
-          <div class="recipes-feature col-xs-6 col-sm-3 col-xl-2">
-           <div class="product-image">
-           <% if @featured_products[1].class == BlogEntry %>
-             <%=link_to(image_tag(@featured_products[1].image), blog_entries_path(@featured_products[1].id)) %>
-             <h2><%=link_to(@featured_products[1].title, blog_entries_path(@featured_products[1].id))%></h2>
-           <% else %>
-             <%=link_to(image_tag(@featured_products[1].image), recipes_show_path(@featured_products[1].slug)) %>
-             <h2><%=link_to(@featured_products[1].title, recipes_show_path(@featured_products[1].slug))%></h2>
-           <% end %>
-           </div>
-         </div>
-
-          <div class="ingredients-feature col-xs-6 col-sm-3 col-xl-2">
-           <div class="product-image">
-           <% if @featured_products[2].class == BlogEntry %>
-             <%=link_to(image_tag(@featured_products[2].image), blog_entries_path(@featured_products[2].id)) %>
-             <h2><%=link_to(@featured_products[2].title, blog_entries_path(@featured_products[2].id))%></h2>
-           <% else %>
-             <%=link_to(image_tag(@featured_products[2].image), recipes_show_path(@featured_products[2].slug)) %>
-             <h2><%=link_to(@featured_products[2].title, recipes_show_path(@featured_products[2].slug))%></h2>
-           <% end %>
-           </div>
-
-         <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
-         </div>
-              <div class="placeholder-feature col-xs-6 col-sm-3 col-xl-2">
-         <div class="product-image">
-         <% if @featured_products[3].class == BlogEntry %>
-           <%=link_to(image_tag(@featured_products[3].image), blog_entries_path(@featured_products[3].id)) %>
-           <h2><%=link_to(@featured_products[3].title, blog_entries_path(@featured_products[3].id))%></h2>
-         <% else %>
-           <%=link_to(image_tag(@featured_products[3].image), recipes_show_path(@featured_products[3].slug)) %>
-           <h2><%=link_to(@featured_products[3].title, recipes_show_path(@featured_products[3].slug))%></h2>
-         <% end %>
-         </div>
-      </div>
-
+ 
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
      </div>
 
