@@ -3,23 +3,36 @@
 	<p class="skin-food-blurb">
 	Looking to throw together your very own, super-moisturising, anti-ageing, gravity-defying face serum? It's nowhere near as tricky as you think and you'll be delighted to hear that we've collated a collection of our best recipes to share with you - each complete with a step-by-step guide. Understanding how simple it is to make your own beauty products is truly empowering; you can take full control over exactly what you put on your skin and tweak bespoke recipes to include only the ingredients you love. Go on, give it a try. We dare you...
 	</p>
-	<div class="row">
-	<%@diy_recipes.each_with_index do |recipe, index| %>
-		<a href='/recipes/<%=recipe.slug %>'>
-			<div class="indiv-recipe  col-xs-6 col-sm-4">
-				<%=image_tag(recipe.image) %>
-				<h3><%= recipe.title %></h3>
-			</div>
-		</a>
-		
-        <% if (index + 1) % 3 == 0 %>
-            </div>
-            <div class='row'>
-        <% end %>
-	<% end %>
-    </div>
+
+	<div class="desktop-recipe-list">
+		<div class="row recipe-row">
+		<%@diy_recipes.each_with_index do |recipe, index| %>
+			<a href='/recipes/<%=recipe.slug %>'>
+				<div class="indiv-recipe  col-xs-6 col-sm-4">
+					<%=image_tag(recipe.image) %>
+					<h3><%= recipe.title %></h3>
+				</div>
+			</a>
+			
+	        <% if (index + 1) % 3 == 0 %>
+	            </div>
+	            <div class='row recipe-row'>
+	        <% end %>
+		<% end %>
+	    </div>
+	</div>
 
 
+	<div class="mobile-recipe-list">
+		<%@diy_recipes.each_with_index do |recipe, index| %>
+			<a href='/recipes/<%=recipe.slug %>'>
+				<div class="indiv-recipe  col-xs-6 col-sm-4">
+					<%=image_tag(recipe.image) %>
+					<h3><%= recipe.title %></h3>
+				</div>
+			</a>
+		<% end %>
+	</div>
 
 
 

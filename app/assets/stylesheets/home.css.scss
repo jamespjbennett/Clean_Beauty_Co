@@ -488,6 +488,14 @@ a:hover{
   position:relative;
 }
 
+  .desktop-recipe-list{
+    display:block;
+  }
+
+  .mobile-recipe-list{
+    display:none;
+  }
+
 .nav li{
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 200;
@@ -796,6 +804,10 @@ position: static;
     border-bottom: 1px dotted #F1E8E8;
   }
 
+  .recipe-row{
+    display:none;
+  }
+
   .comment-content-show{
     text-align:center;
   }
@@ -817,9 +829,15 @@ position: static;
     display:block;
   }
 
-  .desktop-row{
+  .desktop-recipe-list{
     display:none;
   }
+
+  .mobile-recipe-list{
+    display:block;
+  }
+
+
 
   .nav-header-width{
     width: 90%;
