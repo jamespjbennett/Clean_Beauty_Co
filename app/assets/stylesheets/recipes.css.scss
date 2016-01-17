@@ -11,7 +11,7 @@
 .indiv-recipe h3{
 	font-size: 15px;
     letter-spacing: 2px;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica Neue', Helvetica;
     font-weight: 200;
 }
 .indiv-recipe{
@@ -95,7 +95,7 @@
 }
 
 .all-recipes-link{
-  font-family: helvetica neue;
+  font-family: helvetica neue, Helvetica;
   font-weight: 200;
   font-size: 16px;
   margin-top: 30px;
@@ -131,7 +131,7 @@
 }
 
 .skin-food-blurb{
-  font-family: Helvetica Neue;
+  font-family: Helvetica Neue, Helvetica;
   font-weight: 200;
   font-size: 17px;
   line-height: 150%;
@@ -142,7 +142,7 @@
 
 .left-column-recipe p, .helpful-hint{
 	font-weight: 100;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Helvetica;
     font-size: 20px;
     line-height: 150%;
     text-align: justify;
@@ -150,13 +150,13 @@
 
 .right-column-recipe p{
 	font-weight: 100;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Helvetica;
     font-size: 20px;
     line-height: 120%;
 }
 
 ol {
-	font-family: Helvetica Neue!important;
+	font-family: Helvetica Neue!important, Helvetica;
     margin-left: -20px!important;
 }
 
@@ -182,7 +182,7 @@ ol {
 
 .shop-link{
 	float:left;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue', Helvetica;
 	font-size: 16px;
 	font-weight: 200;
 	margin-top: 10px;

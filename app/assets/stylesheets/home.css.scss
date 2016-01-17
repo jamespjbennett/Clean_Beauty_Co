@@ -29,13 +29,13 @@
 
 .comment-content-user{
   font-weight: 100!important;
-  font-family: Helvetica neue!important;
+  font-family: Helvetica neue!important, Helvetica;
 
 }
 
 .comment-content-show{
   font-weight: 200!important;
-  font-family: Helvetica neue!important;
+  font-family: Helvetica neue!important, Helvetica;
 }
 
 .post-comment{
@@ -99,7 +99,7 @@
 .copyright{
   clear: both;
   text-align: center;
-  font-family: Helvetica Neue;
+  font-family: Helvetica Neue, Helvetica;
   font-weight: 200;
   font-size: 15px;
   padding-top:30px;
@@ -116,14 +116,14 @@
 .contact-thanks{
   margin-top: 100px;
   text-align: center;
-  font-family: Helvetica Neue;
+  font-family: Helvetica Neue, Helvetica;
   font-weight: 100;
 }
 
 .contact-second{
   margin-top: 36px;
   text-align: center;
-  font-family: Helvetica Neue;
+  font-family: Helvetica Neue, Helvetica;
   font-weight: 100;
   font-size: 20px;
   margin-bottom: 188px;
@@ -155,7 +155,7 @@ a:hover{
 }
 
 .feature-header, .info-entry p{
-  font-family: Helvetica Neue;
+  font-family: Helvetica Neue, Helvetica;
   font-size: 21px;
 }
 
@@ -263,7 +263,7 @@ body{
 .homepage-about-us h1{
   text-align: center;
   word-spacing: 6px;
-  font-family:  "Helvetica Neue";
+  font-family:  "Helvetica Neue", Helvetica;
 }
 
 .homepage-about-us h1{
@@ -277,7 +277,7 @@ body{
   font-size: 1.5vw;
   text-align: left;
   line-height: 150%;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   font-weight: 100;
   letter-spacing: 0.5px;
@@ -294,7 +294,7 @@ body{
 .header-taglines h1{
   font-size: 25px;
   font-weight: bold;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   width:100%;
   text-align: center;
@@ -489,7 +489,7 @@ a:hover{
 }
 
 .nav li{
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', Helvetica;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -578,13 +578,14 @@ a:hover{
  .header-taglines-second h1{
   font-size: 25px;
   font-weight: bold;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
   width:100%;
   text-align: center;
   /* word-spacing: 6px; */
   letter-spacing: 2px;
 }
+
 
 
 
