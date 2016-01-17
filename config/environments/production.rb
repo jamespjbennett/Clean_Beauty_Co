@@ -90,13 +90,13 @@ Rails.application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
+  address: "smtp.office365.com",
   port: 587,
   domain: 'clean-beauty-co.herokuapp.com',
-  authentication: "plain",
+  authentication: :login,
   enable_starttls_auto: true,
-  user_name: 'jamespjbennett@gmail.com',
-  password: '1xcovateingle',
+  user_name: 'info@cleanbeautyco.com',
+  password: 'Rutterford87!',
   openssl_verify_mode: 'none'
   }
 
