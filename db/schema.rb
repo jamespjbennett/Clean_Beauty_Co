@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160112211102) do
+ActiveRecord::Schema.define(version: 20160118204305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160112211102) do
     t.string   "image"
     t.text     "introduction_text"
     t.boolean  "featured"
+    t.string   "keywords"
   end
 
   create_table "commontator_comments", force: :cascade do |t|
@@ -143,6 +144,7 @@ ActiveRecord::Schema.define(version: 20160112211102) do
     t.boolean  "available"
     t.string   "slug"
     t.boolean  "featured"
+    t.string   "keywords"
   end
 
   add_index "recipes", ["slug"], name: "index_recipes_on_slug", unique: true, using: :btree

@@ -3,8 +3,11 @@
 <head>
   <title>CleanBeautyCoApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="London-based pursuers of clean beauty, sharing natural and non-toxic beauty recipes">
-  <meta name="keywords" content="clean, beauty, natural, non-toxic, london, recipes, blog, healthy, organic, skin-food, diy, pure">
+<!--   <meta name="description" content="London-based pursuers of clean beauty, sharing natural and non-toxic beauty recipes">
+  <meta name="keywords" content="clean, beauty, natural, non-toxic, london, recipes, blog, healthy, organic, skin-food, diy, pure"> -->
+  <meta name='description' content='<%= yield_meta_tag(:description, 'London-based pursuers of clean beauty, sharing natural and non-toxic beauty recipes') %>' />
+  <meta name='keywords' content='<%= yield_meta_tag(:keywords, 'clean, beauty, natural, non-toxic, london, recipes, blog, healthy, organic, skin-food, diy, pure') %>' />
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= yield :javascript_includes %>

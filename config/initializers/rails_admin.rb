@@ -29,6 +29,7 @@ RailsAdmin.config do |config|
       # For RailsAdmin >= 0.5.0
       field :content, :wysihtml5
       field :featured
+      field :keywords
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true
@@ -42,6 +43,7 @@ RailsAdmin.config do |config|
       field :image
       field :description, :wysihtml5
       field :booking_link
+      
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true
