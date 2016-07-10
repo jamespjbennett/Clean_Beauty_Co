@@ -30,6 +30,7 @@ RailsAdmin.config do |config|
       field :content, :wysihtml5
       field :featured
       field :keywords
+      field :slug
       # For RailsAdmin < 0.5.0
       # field :description do
       #   bootstrap_wysihtml5 true
