@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
   resources :ingredients
-  resources :blog_entries
-  # get    'blog_entries/:slug' => 'blog_entries#show', :as => 'blog_entries_show'
+  resources :blog_entries, :except => ['show']
+  get    'blog_entries/:slug' => 'blog_entries#show', :as => 'blog_entries_show'
 
   resources :stockists
   resources :recipes, :except => ['show']
