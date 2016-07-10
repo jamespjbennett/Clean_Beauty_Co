@@ -76,7 +76,6 @@ class BlogEntriesController < ApplicationController
     def set_blog_entry
       # uncomment this when the slugs are all in place
       # @blog_entry = BlogEntry.find_by_slug(params[:slug])
-      binding.pry
       @blog_entry = BlogEntry.find(params[:id])
     end
 

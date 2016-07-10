@@ -140,6 +140,7 @@
      </div>
 
      <div class="desktop-row">
+      <div class="feature-sep col-xs-0 col-xl-2"></div>
        <div class="products-feature col-xs-6 col-sm-3 col-xl-2">
          <div class="product-image">
          <% if @featured_products.first.class == BlogEntry %>
@@ -177,7 +178,7 @@
 
          <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
          </div>
-              <div class="placeholder-feature col-xs-6 col-sm-3 col-xl-2">
+      <div class="placeholder-feature col-xs-6 col-sm-3 col-xl-2">
          <div class="product-image">
          <% if @featured_products[3].class == BlogEntry %>
            <%=link_to(image_tag(@featured_products[3].image), blog_entry_path(@featured_products[3].id)) %>
@@ -188,6 +189,7 @@
          <% end %>
          </div>
       </div>
+      <div class="feature-sep col-xs-0 col-xl-2"></div>
 
      <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum nisi quaerat reiciendis minus aspernatur! Voluptatem blanditiis odio eos fugiat enim sed eveniet asperiores alias. Voluptates molestiae veritatis, excepturi vitae.</p> -->
      </div>
