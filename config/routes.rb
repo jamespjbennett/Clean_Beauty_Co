@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :ingredients
   resources :blog_entries
+  # get    'blog_entries/:slug' => 'blog_entries#show', :as => 'blog_entries_show'
+
   resources :stockists
   resources :recipes, :except => ['show']
   # get  'recipes/:slug' => 'recipes#show'
