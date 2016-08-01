@@ -14,8 +14,7 @@ class BlogEntriesController < ApplicationController
   # GET /blog_entries/1
   # GET /blog_entries/1.json
   def show
-    @blog_entry = BlogEntry.find_by_slug(params[:slug])
-    # @blog_entry = BlogEntry.find(params[:id])
+
     @blog_entries = BlogEntry.all.sort.reverse
     @latest_blog_entries = @blog_entries[0..3]
     @blog_comment = BlogCcomment.new
@@ -75,7 +74,9 @@ class BlogEntriesController < ApplicationController
     def set_blog_entry
       # uncomment this when the slugs are all in place
       @blog_entry = BlogEntry.find_by_slug(params[:slug])
-      # @blog_entry = BlogEntry.find(params[:id])
+      if !@blog_entry
+        @blog_entry = BlogEntry.find(params[:slug])
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
