@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   mount Commontator::Engine => '/commontator'
 
   resources :ingredients
-  resources :blog_entries
+  # resources :blog_entries
   # uncomment the below when the slugs are in place
-  # resources :blog_entries, :except => ['show']
-  # get    'blog_entries/:slug' => 'blog_entries#show', :as => 'blog_entries_show'
+  resources :blog_entries, :except => ['show']
+  get    'blog_entries/:slug' => 'blog_entries#show', :as => 'blog_entries_show'
 
   resources :stockists
   resources :recipes, :except => ['show']
